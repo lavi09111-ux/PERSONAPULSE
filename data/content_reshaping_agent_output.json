@@ -1,0 +1,126 @@
+{
+  "persona": "Tech Professional",
+  "articles": [
+    {
+      "title": "Nvidia launches agent safety platform backed by over 100 companies",
+      "description": "On Monday, Nvidia introduced the Open Agent Safety Platform. This includes open software and a hardware reference design to help keep AI agents within the boundaries set by their operators. Over 100 organizations are already using this technology, including A\u2026",
+      "url": "https://thenextweb.com/news/nvidia-open-agent-safety-platform",
+      "source": "The Next Web",
+      "published_at": "2026-09-28T09:57:24Z",
+      "bullet_points": [
+        "Nvidia released a new Open Agent Safety Platform.",
+        "It provides software and hardware tools to control AI agents.",
+        "The system ensures AI stays within defined operator boundaries.",
+        "Over 100 organizations have already adopted this technology."
+      ]
+    },
+    {
+      "title": "Nvidia says its new AI safety platform can contain rogue agents within \u2018milliseconds\u2019",
+      "description": "Nvidia is launching a new safety platform designed to contain and monitor AI agents, a move that comes in response to a wave of rogue hacking incidents, as reported earlier by Reuters. In an announcement on Monday, Nvidia says its new Open Agent Safety Platfo\u2026",
+      "url": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
+      "source": "The Verge",
+      "published_at": "2026-09-28T13:36:06Z",
+      "bullet_points": [
+        "Nvidia created a platform to monitor and contain AI agents.",
+        "The project addresses concerns regarding rogue AI hacking incidents.",
+        "The software can detect and stop unauthorized AI behavior in milliseconds."
+      ]
+    },
+    {
+      "title": "OpenAI\u2019s AI agents need to catch up",
+      "description": "OpenAI popularized the modern generative AI chatbot, but as its 2026 DevDay event approaches, it's fallen behind in one of the industry's hottest categories: continuously running, consumer-facing AI agents. On Tuesday, it will likely try to capture the lead i\u2026",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001590/openai-devday-2026-aeon-ai-agent",
+      "source": "The Verge",
+      "published_at": "2026-09-28T18:40:24Z",
+      "bullet_points": [
+        "OpenAI currently trails behind in the consumer AI agent market.",
+        "The company is expected to showcase new agent capabilities at DevDay.",
+        "The goal is to regain leadership in continuously running AI software."
+      ]
+    },
+    {
+      "title": "Meta Connect 2026: The biggest news and announcements",
+      "description": "It\u2019s about time for Meta Connect, the company\u2019s annual product launch event. This year, given the company\u2019s major focus on AI and wearables like smart glasses, it seems likely that we\u2019ll see updates from CEO Mark Zuckerberg and his team on those categories. T\u2026",
+      "url": "https://www.theverge.com/tech/998480/meta-connect-2026-biggest-news-announcements",
+      "source": "The Verge",
+      "published_at": "2026-09-23T22:43:58Z",
+      "bullet_points": [
+        "Meta Connect is the company's annual product launch event.",
+        "Expect major announcements regarding new AI developments.",
+        "The event will likely feature updates on wearable smart glasses."
+      ]
+    },
+    {
+      "title": "Nvidia's robotics lab is becoming a founder factory",
+      "description": "Nvidia robotics alums are launching AI startups as venture capital fuels a boom. The chip giant stands to benefit from their success.",
+      "url": "https://www.businessinsider.com/nvidia-alumni-fueling-new-wave-robotics-ai-startups-2026-9#article",
+      "source": "Business Insider",
+      "published_at": "2026-09-29T09:00:01Z",
+      "bullet_points": [
+        "Former Nvidia employees are starting their own AI ventures.",
+        "Increased venture capital is fueling a boom in robotics startups.",
+        "Nvidia stands to benefit from the success of these new companies."
+      ]
+    },
+    {
+      "title": "The SaaSpocalypse that wasn\u2019t, with Atlassian CEO Mike Cannon-Brookes",
+      "description": "Today, I\u2019m talking with Mike Cannon-Brookes, who is cofounder and CEO of Atlassian.\u00a0 Atlassian is one of those companies that every other company runs on \u2014 it makes important platform tools like Jira and Trello that allow people to organize and manage big tea\u2026",
+      "url": "https://www.theverge.com/podcast/1000914/atlassian-ceo-mike-cannon-brookes-saaspocalypse-ai-enterprise-software-trello-jira",
+      "source": "The Verge",
+      "published_at": "2026-09-28T14:01:39Z",
+      "bullet_points": [
+        "Atlassian CEO Mike Cannon-Brookes discusses the state of enterprise software.",
+        "The conversation covers how AI is changing platform tools like Jira and Trello.",
+        "The \"SaaSpocalypse\" predicted for the industry did not occur."
+      ]
+    },
+    {
+      "title": "AI-native patent firm Fearn launches to take on the billable hour",
+      "description": "A conventional patent application can take 30 to 40 hours of attorney time and cost $18,000 to $40,000 in legal fees. Startups wait months to protect technology that can change by the day. Fearn, the modern patent prosecution firm for startups, was built arou\u2026",
+      "url": "https://thenextweb.com/news/fearn-ai-native-patent-firm-launch-flat-fees",
+      "source": "The Next Web",
+      "published_at": "2026-09-23T12:00:47Z",
+      "bullet_points": [
+        "Fearn is a new AI-focused firm specializing in patents.",
+        "It aims to replace expensive hourly legal billing with flat fees.",
+        "The service is designed to speed up patent protection for startups."
+      ]
+    },
+    {
+      "title": "Numeral raises $100m Series C for AI sales tax compliance",
+      "description": "Sales tax has become a much bigger operational challenge as companies grow across markets, systems and business models. Sam Ross, co-founder and chief executive of Numeral, said that as the San Francisco company announced a $100m Series C on Wednesday. Insigh\u2026",
+      "url": "https://thenextweb.com/news/numeral-100m-series-c-insight-partners-ai-sales-tax",
+      "source": "The Next Web",
+      "published_at": "2026-09-23T13:41:38Z",
+      "bullet_points": [
+        "Numeral raised $100 million in Series C funding.",
+        "The company uses AI to help businesses manage sales tax compliance.",
+        "Managing tax across different markets is a growing operational challenge."
+      ]
+    },
+    {
+      "title": "Rayon raises \u20ac10M to bring AI and 3D to its interior design software",
+      "description": "Rayon, the Paris-based startup that has created software allowing interior designers to draw floor plans in a web browser, announced that it has raised 10 million euros in its Series A financing round, with Partech as the lead investor. Northzone, Foundamenta\u2026",
+      "url": "https://thenextweb.com/news/rayon-10m-series-a-partech-interior-design-ai",
+      "source": "The Next Web",
+      "published_at": "2026-09-29T10:30:37Z",
+      "bullet_points": [
+        "Rayon secured 10 million euros in Series A funding.",
+        "The startup makes web-based software for interior design floor plans.",
+        "The new capital will support integrating AI and 3D features."
+      ]
+    },
+    {
+      "title": "AI companies are asking their employees to flag AI writing \u2014 and one wants a steak emoji",
+      "description": "AI companies are tired of employees passing off AI chatbot output as their own and are rolling out writing guidelines.",
+      "url": "https://www.businessinsider.com/ai-startups-asking-employees-to-flag-ai-writing-clay-figma-2026-9#article",
+      "source": "Business Insider",
+      "published_at": "2026-09-29T05:31:44Z",
+      "bullet_points": [
+        "Companies are asking staff to identify when they use AI for writing.",
+        "Employees have been passing off AI chatbot work as their own.",
+        "Firms are now introducing official guidelines for AI usage."
+      ]
+    }
+  ]
+}
