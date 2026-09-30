@@ -1,0 +1,52 @@
+{
+  "tech_professional": {
+    "display_name": "Tech Professional",
+    "topics": [
+      "technology",
+      "software",
+      "AI",
+      "startups"
+    ],
+    "exclude_keywords": [
+      "celebrity",
+      "gossip"
+    ]
+  },
+  "student": {
+    "display_name": "Student",
+    "topics": [
+      "education",
+      "scholarships",
+      "career",
+      "exams"
+    ],
+    "exclude_keywords": [
+      "stock market",
+      "finance"
+    ]
+  },
+  "finance_enthusiast": {
+    "display_name": "Finance Enthusiast",
+    "topics": [
+      "stock market",
+      "economy",
+      "investing",
+      "banking"
+    ],
+    "exclude_keywords": [
+      "sports"
+    ]
+  },
+  "sports_fan": {
+    "display_name": "Sports Fan",
+    "topics": [
+      "cricket",
+      "football",
+      "olympics",
+      "sports"
+    ],
+    "exclude_keywords": [
+      "politics"
+    ]
+  }
+}

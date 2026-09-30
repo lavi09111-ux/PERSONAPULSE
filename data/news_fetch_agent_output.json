@@ -1,0 +1,138 @@
+{
+  "persona": "Tech Professional",
+  "topics": [
+    "technology",
+    "software",
+    "AI",
+    "startups"
+  ],
+  "article_count": 18,
+  "articles": [
+    {
+      "title": "Nvidia's robotics lab is becoming a founder factory",
+      "description": "Nvidia robotics alums are launching AI startups as venture capital fuels a boom. The chip giant stands to benefit from their success.",
+      "url": "https://www.businessinsider.com/nvidia-alumni-fueling-new-wave-robotics-ai-startups-2026-9#article",
+      "source": "Business Insider",
+      "published_at": "2026-09-29T09:00:01Z"
+    },
+    {
+      "title": "AI-native patent firm Fearn launches to take on the billable hour",
+      "description": "A conventional patent application can take 30 to 40 hours of attorney time and cost $18,000 to $40,000 in legal fees. Startups wait months to protect technology that can change by the day. Fearn, the modern patent prosecution firm for startups, was built arou\u2026",
+      "url": "https://thenextweb.com/news/fearn-ai-native-patent-firm-launch-flat-fees",
+      "source": "The Next Web",
+      "published_at": "2026-09-23T12:00:47Z"
+    },
+    {
+      "title": "Meta Connect 2026: The biggest news and announcements",
+      "description": "It\u2019s about time for Meta Connect, the company\u2019s annual product launch event. This year, given the company\u2019s major focus on AI and wearables like smart glasses, it seems likely that we\u2019ll see updates from CEO Mark Zuckerberg and his team on those categories. T\u2026",
+      "url": "https://www.theverge.com/tech/998480/meta-connect-2026-biggest-news-announcements",
+      "source": "The Verge",
+      "published_at": "2026-09-23T22:43:58Z"
+    },
+    {
+      "title": "Robotics startups are courting university researchers. Microagi just hired eight.",
+      "description": "Georgia Tech professor Animesh Garg is joining German robotics startup Microagi with seven members of his research group.",
+      "url": "https://www.businessinsider.com/microagi-hired-eight-academics-as-robotics-startups-chase-talent-2026-9#article",
+      "source": "Business Insider",
+      "published_at": "2026-09-29T09:00:03Z"
+    },
+    {
+      "title": "Bernie Sanders proposes banning \u2018superintelligence\u2019 and putting violators in prison",
+      "description": "Sen. Bernie Sanders (I-VT) and Rep. Greg Casar (D-TX) have introduced new legislation that would ban anyone from developing artificial superintelligence - a technology the bill describes as capable of the \"destruction or disempowerment of humanity,\" including\u2026",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/999443/bernie-sanders-ai-superintelligence-ban-act",
+      "source": "The Verge",
+      "published_at": "2026-09-23T16:23:05Z"
+    },
+    {
+      "title": "Nvidia says its new AI safety platform can contain rogue agents within \u2018milliseconds\u2019",
+      "description": "Nvidia is launching a new safety platform designed to contain and monitor AI agents, a move that comes in response to a wave of rogue hacking incidents, as reported earlier by Reuters. In an announcement on Monday, Nvidia says its new Open Agent Safety Platfo\u2026",
+      "url": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
+      "source": "The Verge",
+      "published_at": "2026-09-28T13:36:06Z"
+    },
+    {
+      "title": "Nvidia launches agent safety platform backed by over 100 companies",
+      "description": "On Monday, Nvidia introduced the Open Agent Safety Platform. This includes open software and a hardware reference design to help keep AI agents within the boundaries set by their operators. Over 100 organizations are already using this technology, including A\u2026",
+      "url": "https://thenextweb.com/news/nvidia-open-agent-safety-platform",
+      "source": "The Next Web",
+      "published_at": "2026-09-28T09:57:24Z"
+    },
+    {
+      "title": "KPMG is building a Silicon Valley-style incubator to help sidestep Big Four bureaucracy",
+      "description": "The Big Four firm wants to build a \"Silicon Valley incubator within the walls of KPMG,\" Todd Lohr, its AI chief, said.",
+      "url": "https://www.businessinsider.com/kpmg-new-division-silicon-valley-ai-accelerate-innovation-big-four-2026-9#article",
+      "source": "Business Insider",
+      "published_at": "2026-09-25T09:26:39Z"
+    },
+    {
+      "title": "The SaaSpocalypse that wasn\u2019t, with Atlassian CEO Mike Cannon-Brookes",
+      "description": "Today, I\u2019m talking with Mike Cannon-Brookes, who is cofounder and CEO of Atlassian.\u00a0 Atlassian is one of those companies that every other company runs on \u2014 it makes important platform tools like Jira and Trello that allow people to organize and manage big tea\u2026",
+      "url": "https://www.theverge.com/podcast/1000914/atlassian-ceo-mike-cannon-brookes-saaspocalypse-ai-enterprise-software-trello-jira",
+      "source": "The Verge",
+      "published_at": "2026-09-28T14:01:39Z"
+    },
+    {
+      "title": "The startup trap that kept this longevity app founder stuck",
+      "description": "Death Clock CEO Brent Franson says the most dangerous startups can be the ones that seem \"pretty good.\"",
+      "url": "https://www.businessinsider.com/death-clock-ceo-slow-failure-longevity-2026-9#article",
+      "source": "Business Insider",
+      "published_at": "2026-09-27T09:57:01Z"
+    },
+    {
+      "title": "OpenAI\u2019s AI agents need to catch up",
+      "description": "OpenAI popularized the modern generative AI chatbot, but as its 2026 DevDay event approaches, it's fallen behind in one of the industry's hottest categories: continuously running, consumer-facing AI agents. On Tuesday, it will likely try to capture the lead i\u2026",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001590/openai-devday-2026-aeon-ai-agent",
+      "source": "The Verge",
+      "published_at": "2026-09-28T18:40:24Z"
+    },
+    {
+      "title": "US rejects global AI governance at UN Security Council",
+      "description": "The United States is rejecting any global governance of advanced AI, telling the UN Security Council in New York today that each country should regulate the technology itself. Michael Kratsios, director of the White House Office of Science and Technology Poli\u2026",
+      "url": "https://thenextweb.com/news/us-rejects-global-ai-governance",
+      "source": "The Next Web",
+      "published_at": "2026-09-23T20:56:03Z"
+    },
+    {
+      "title": "Numeral raises $100m Series C for AI sales tax compliance",
+      "description": "Sales tax has become a much bigger operational challenge as companies grow across markets, systems and business models. Sam Ross, co-founder and chief executive of Numeral, said that as the San Francisco company announced a $100m Series C on Wednesday. Insigh\u2026",
+      "url": "https://thenextweb.com/news/numeral-100m-series-c-insight-partners-ai-sales-tax",
+      "source": "The Next Web",
+      "published_at": "2026-09-23T13:41:38Z"
+    },
+    {
+      "title": "'Soar' wars: Inside two AI startups' messy fight over the same name",
+      "description": "A founder known for viral antics sent a LinkedIn request to the CEO of Soar, a travel startup. Days later, he launched a rival \u2014 also called Soar.",
+      "url": "https://www.businessinsider.com/soar-startup-name-ai-travel-fight-2026-9#article",
+      "source": "Business Insider",
+      "published_at": "2026-09-25T09:37:01Z"
+    },
+    {
+      "title": "AI companies are asking their employees to flag AI writing \u2014 and one wants a steak emoji",
+      "description": "AI companies are tired of employees passing off AI chatbot output as their own and are rolling out writing guidelines.",
+      "url": "https://www.businessinsider.com/ai-startups-asking-employees-to-flag-ai-writing-clay-figma-2026-9#article",
+      "source": "Business Insider",
+      "published_at": "2026-09-29T05:31:44Z"
+    },
+    {
+      "title": "Rayon raises \u20ac10M to bring AI and 3D to its interior design software",
+      "description": "Rayon, the Paris-based startup that has created software allowing interior designers to draw floor plans in a web browser, announced that it has raised 10 million euros in its Series A financing round, with Partech as the lead investor. Northzone, Foundamenta\u2026",
+      "url": "https://thenextweb.com/news/rayon-10m-series-a-partech-interior-design-ai",
+      "source": "The Next Web",
+      "published_at": "2026-09-29T10:30:37Z"
+    },
+    {
+      "title": "Meta\u2019s Muse AI Agent Has Been Downloaded Half a Million Times \u2014 With a Serious Bug",
+      "description": "The security flaw has been patched, but there are plenty of reasons to hesitate about giving AI too much access.",
+      "url": "https://www.cnet.com/tech/services-and-software/metas-muse-ai-agent-zero-day-cybersecurity-bug-patched/",
+      "source": "CNET",
+      "published_at": "2026-09-23T17:52:31Z"
+    },
+    {
+      "title": "Nvidia\u2019s $150 Billion Buyback: A Lifeline for AI Hype, Not Everyday Investors",
+      "description": "Nvidia is the one AI company with real profits. Its buyback shows who benefits first.",
+      "url": "https://www.cnet.com/tech/services-and-software/nvidia-150-billion-buyback-ai-hype-not-everyday-investors/",
+      "source": "CNET",
+      "published_at": "2026-09-29T00:15:31Z"
+    }
+  ]
+}

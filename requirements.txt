@@ -1,0 +1,9 @@
+# PersonaFeed - dependencies for all agents
+# Install with: pip install -r requirements.txt
+
+# Google Agent Development Kit - used to build every agent (LlmAgent, runners)
+# This already includes google-genai, which is what actually talks to Gemini.
+google-adk>=1.0.0
+
+# Used by the News Fetch Agent to call NewsAPI
+requests>=2.31.0
