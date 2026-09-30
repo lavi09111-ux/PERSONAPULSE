@@ -8,21 +8,68 @@ into one final, clean, structured digest, ready to be shown to the user
 through the web interface.
 
 Stack:
-- Google ADK (Agent Development Kit) for the agent wrapper
 - No LLM is used here. Packaging already-finished data into a fixed
   shape is a pure formatting task, not a reasoning task, so this agent
-  is plain deterministic Python wrapped as an ADK tool/agent. This keeps
-  the pipeline honest: only agents that genuinely need to reason use an
-  LLM.
-
-Assumes:
-- Input is the dict produced by insight_generation_agent, containing a
-  persona name, an insight paragraph, and a list of bullet-pointed
-  articles.
+  is plain deterministic Python.
+- Input loaded from data/insight_generation_agent_output.json
+- Output saved to data/presentation_agent_output.json
 """
 
+import json
+import os
 from datetime import datetime, timezone
+from dotenv import load_dotenv
 
+# Load environment variables if needed
+load_dotenv()
+
+
+# ---------------------------------------------------------------------------
+# 1. Data I/O Helpers
+# ---------------------------------------------------------------------------
+
+def load_insight_output(filename: str = "insight_generation_agent_output.json") -> dict:
+    """
+    Loads output from the insight generation agent from the data folder.
+    """
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    possible_paths = [
+        os.path.join(base_dir, "data", filename),
+        os.path.join(os.path.dirname(base_dir), "data", filename),
+    ]
+
+    for path in possible_paths:
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+
+    raise FileNotFoundError(
+        f"Input file '{filename}' not found in data folder. "
+        "Please run 'python agents/insight_generation_agent.py' first to generate it."
+    )
+
+
+def save_presentation_output(data_dict: dict, filename: str = "presentation_agent_output.json") -> str:
+    """
+    Saves the presentation agent output into the data folder in strict JSON format.
+    """
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    target_paths = [
+        os.path.join(base_dir, "data", filename),
+        os.path.join(os.path.dirname(base_dir), "data", filename),
+    ]
+
+    for path in target_paths:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data_dict, f, indent=2)
+
+    return target_paths[0]
+
+
+# ---------------------------------------------------------------------------
+# 2. Main Digest Packaging Function
+# ---------------------------------------------------------------------------
 
 def build_final_digest(persona: str, insight: str, articles: list[dict]) -> dict:
     """
@@ -66,46 +113,47 @@ def build_final_digest(persona: str, insight: str, articles: list[dict]) -> dict
 
 
 # ---------------------------------------------------------------------------
-# Quick manual test (run this file directly to sanity-check the function)
+# 3. Terminal Execution Test Block
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    import json
+    print("=" * 60)
+    print(" PersonaPulse - Presentation Agent Execution Test ")
+    print("=" * 60)
 
-    sample_persona = "Tech Professional"
-    sample_insight = (
-        "This week AI is becoming cheaper and more accessible. A major "
-        "lab released a stronger, lower cost model, a developer tools "
-        "startup raised new funding to grow its team, and a cloud "
-        "provider cut prices for AI compute. Together these signal "
-        "that building with AI is getting easier and less expensive "
-        "for companies of all sizes."
+    try:
+        print("\n[Step 1] Loading input from data/insight_generation_agent_output.json...")
+        input_data = load_insight_output()
+        print(f"  - Persona: {input_data.get('persona')}")
+        print(f"  - Articles Count: {len(input_data.get('articles', []))}")
+    except Exception as e:
+        print(f"[ERROR] {e}")
+        exit(1)
+
+    print("\n[Step 2] Packaging final digest with Presentation Agent...")
+    final_digest = build_final_digest(
+        persona=input_data.get("persona", ""),
+        insight=input_data.get("insight", ""),
+        articles=input_data.get("articles", []),
     )
-    sample_articles = [
-        {
-            "title": "New AI model released by major lab",
-            "url": "https://example.com/ai-model",
-            "source": "Example News",
-            "published_at": "2026-09-25T10:00:00Z",
-            "bullet_points": [
-                "A research lab released a new AI model.",
-                "It is better at reasoning and coding tasks.",
-                "The model is cheaper to use than the older version.",
-            ],
-        },
-        {
-            "title": "Startup raises funding round",
-            "url": "https://example.com/startup-funding",
-            "source": "Example News",
-            "published_at": "2026-09-24T09:00:00Z",
-            "bullet_points": [
-                "A developer tools startup received new funding.",
-                "A well-known firm led the investment.",
-                "The company plans to hire more engineers.",
-                "The startup will use the money to grow globally.",
-            ],
-        },
-    ]
 
-    final_digest = build_final_digest(sample_persona, sample_insight, sample_articles)
-    print(json.dumps(final_digest, indent=2))
+    print("\n[Step 3] Saving final digest to data/presentation_agent_output.json...")
+    saved_path = save_presentation_output(final_digest)
+
+    print("\nPresentation Digest Summary:")
+    print(f"  - Persona: {final_digest.get('persona')}")
+    print(f"  - Generated At: {final_digest.get('generated_at')}")
+    print(f"  - Article Count: {final_digest.get('article_count')}")
+    print("\nWeekly Insight:")
+    print(f"  \"{final_digest.get('insight')}\"")
+
+    print("\nFirst Article in Final Digest:")
+    if final_digest.get("articles"):
+        art = final_digest["articles"][0]
+        print(f"  - Title: {art.get('title')}")
+        print(f"  - Source: {art.get('source')}")
+        print(f"  - URL: {art.get('url')}")
+        print(f"  - Feedback Field Ready: {art.get('feedback')}")
+
+    print("\n[COMPLETE] Presentation Agent executed cleanly!")
+    print("=" * 60)
