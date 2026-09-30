@@ -9,25 +9,78 @@ set for the week.
 
 Stack:
 - Google ADK (Agent Development Kit) for the agent wrapper
-- Gemini 3.1 Flash Lite as the reasoning model (ADK native model support,
-  no bridge library needed, since Gemini is Google own model)
-- No external tool is needed here. Spotting a trend across several
-  articles is a pure language reasoning task, so the LLM does it
-  directly from instructions.
-
-Assumes:
-- Either GOOGLE_API_KEY is set (for Google AI Studio), OR
-  GOOGLE_CLOUD_PROJECT + GOOGLE_CLOUD_LOCATION are set along with
-  GOOGLE_GENAI_USE_VERTEXAI=TRUE (for Vertex AI on GCP)
-- Input is the dict produced by content_reshaping_agent, containing a
-  persona name and a list of articles, each already carrying its own
-  bullet_points field.
+- Gemini 3.1 Flash Lite as the reasoning model
+- Input loaded from data/content_reshaping_agent_output.json
+- Output saved to data/insight_generation_agent_output.json
 """
 
+import json
+import os
+import re
+from dotenv import load_dotenv
 from google.adk.agents import LlmAgent
 
+# Load environment variables from .env file
+load_dotenv()
+
+
 # ---------------------------------------------------------------------------
-# 1. The ADK Agent itself - uses Gemini 3.1 Flash Lite to write one insight
+# 1. Data I/O Helpers
+# ---------------------------------------------------------------------------
+
+def load_reshaping_output(filename: str = "content_reshaping_agent_output.json") -> dict:
+    """
+    Loads output from the content reshaping agent from the data folder.
+    """
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    possible_paths = [
+        os.path.join(base_dir, "data", filename),
+        os.path.join(os.path.dirname(base_dir), "data", filename),
+    ]
+
+    for path in possible_paths:
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+
+    raise FileNotFoundError(
+        f"Input file '{filename}' not found in data folder. "
+        "Please run 'python agents/content_reshaping_agent.py' first to generate it."
+    )
+
+
+def save_insight_output(data_dict: dict, filename: str = "insight_generation_agent_output.json") -> str:
+    """
+    Saves the insight generation agent output into the data folder in strict JSON format.
+    """
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    target_paths = [
+        os.path.join(base_dir, "data", filename),
+        os.path.join(os.path.dirname(base_dir), "data", filename),
+    ]
+
+    for path in target_paths:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data_dict, f, indent=2)
+
+    return target_paths[0]
+
+
+def extract_json(text: str) -> dict:
+    """
+    Safely extracts and parses a JSON object from text returned by the model.
+    """
+    match = re.search(r"\{.*\}", text, re.DOTALL)
+    if not match:
+        raise ValueError(f"No JSON object found in model output: {text[:200]}")
+
+    json_str = match.group(0).replace("\\'", "'")
+    return json.loads(json_str)
+
+
+# ---------------------------------------------------------------------------
+# 2. The ADK Agent itself
 # ---------------------------------------------------------------------------
 
 insight_generation_agent = LlmAgent(
@@ -58,21 +111,20 @@ insight_generation_agent = LlmAgent(
         "and this new insight paragraph, plus the original unchanged "
         "list of articles, so the next agent still has everything it "
         "needs to build the final digest.\n\n"
-"IMPORTANT: Reply with ONLY a valid JSON object. Do not include "
-"any explanation, headings, or extra words before or after the "
-"JSON. Do not wrap it in code fences. Your entire reply must be "
-"parseable as JSON on its own."
+        "IMPORTANT: Reply with ONLY a valid JSON object. Do not include "
+        "any explanation, headings, or extra words before or after the "
+        "JSON. Do not wrap it in code fences. Your entire reply must be "
+        "parseable as JSON on its own."
     ),
 )
 
 
 # ---------------------------------------------------------------------------
-# 2. Quick manual test (run this file directly to sanity-check the agent)
+# 3. Terminal Execution Test Block
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
     import asyncio
-
     from google.adk.runners import InMemoryRunner
     from google.genai import types
 
@@ -80,49 +132,21 @@ if __name__ == "__main__":
     USER_ID = "test_user"
     SESSION_ID = "test_session"
 
-    # In the real pipeline, this input comes from the Content Reshaping
-    # Agent output. For a standalone test, paste a sample output here.
-    sample_input = {
-        "persona": "Tech Professional",
-        "articles": [
-            {
-                "title": "New AI model released by major lab",
-                "url": "https://example.com/ai-model",
-                "source": "Example News",
-                "published_at": "2026-09-25T10:00:00Z",
-                "bullet_points": [
-                    "A research lab released a new AI model.",
-                    "It is better at reasoning and coding tasks.",
-                    "The model is cheaper to use than the older version.",
-                ],
-            },
-            {
-                "title": "Startup raises funding round",
-                "url": "https://example.com/startup-funding",
-                "source": "Example News",
-                "published_at": "2026-09-24T09:00:00Z",
-                "bullet_points": [
-                    "A developer tools startup received new funding.",
-                    "A well-known firm led the investment.",
-                    "The company plans to hire more engineers.",
-                    "The startup will use the money to grow globally.",
-                ],
-            },
-            {
-                "title": "Cloud provider cuts AI compute prices",
-                "url": "https://example.com/cloud-prices",
-                "source": "Example News",
-                "published_at": "2026-09-23T09:00:00Z",
-                "bullet_points": [
-                    "A major cloud provider lowered prices for AI compute.",
-                    "This makes it cheaper for companies to train models.",
-                    "Analysts say this could speed up AI adoption.",
-                ],
-            },
-        ],
-    }
+    print("=" * 60)
+    print(" PersonaPulse - Insight Generation Agent Execution Test ")
+    print("=" * 60)
+
+    try:
+        print("\n[Step 1] Loading input from data/content_reshaping_agent_output.json...")
+        input_data = load_reshaping_output()
+        print(f"  - Persona: {input_data.get('persona')}")
+        print(f"  - Reshaped Articles Count: {len(input_data.get('articles', []))}")
+    except Exception as e:
+        print(f"[ERROR] {e}")
+        exit(1)
 
     async def main():
+        print("\n[Step 2] Running Insight Generation Agent...")
         runner = InMemoryRunner(agent=insight_generation_agent, app_name=APP_NAME)
 
         await runner.session_service.create_session(
@@ -133,9 +157,10 @@ if __name__ == "__main__":
 
         message = types.Content(
             role="user",
-            parts=[types.Part(text=f"Generate the weekly insight for this persona: {sample_input}")],
+            parts=[types.Part(text=f"Generate the weekly insight for this persona: {json.dumps(input_data)}")],
         )
 
+        final_text = ""
         async for event in runner.run_async(
             user_id=USER_ID,
             session_id=SESSION_ID,
@@ -144,6 +169,20 @@ if __name__ == "__main__":
             if event.content and event.content.parts:
                 for part in event.content.parts:
                     if part.text:
-                        print(part.text)
+                        final_text += part.text
+
+        output_json = extract_json(final_text)
+
+        print("\n[Step 3] Saving output to data/insight_generation_agent_output.json...")
+        save_insight_output(output_json)
+
+        print("\nInsight Generation Output Summary:")
+        print(f"  - Persona: {output_json.get('persona')}")
+        print(f"  - Article Count Preserved: {len(output_json.get('articles', []))}")
+        print("\nGenerated Insight Paragraph:")
+        print(f"  \"{output_json.get('insight')}\"")
+
+        print("\n[COMPLETE] Insight Generation Agent executed cleanly!")
 
     asyncio.run(main())
+    print("=" * 60)
