@@ -1,28 +1,35 @@
 """
 news_fetch_agent.py
 
-PersonaPulse - News Fetch Agent
---------------------------------
+PersonaPulse - News Fetch Agent & MCP Server
+--------------------------------------------
 Sole job: Given a persona (interests, topics, exclusions), fetch the last 7
 days of news articles relevant to that persona using NewsAPI.
 
-Stack:
-- Google ADK (Agent Development Kit) for the agent wrapper
-- Gemini 3.1 Flash Lite as the reasoning model
-- NewsAPI as the external data source, wrapped as an ADK "tool"
+Capabilities:
+- Google ADK (Agent Development Kit) LlmAgent wrapper
+- Model Context Protocol (MCP) Server exposing tools, resources, and prompts
+- NewsAPI integration as an external data source
 - Output automatically saved to data/news_fetch_agent_output.json
 """
 
 import json
 import os
+import sys
 from datetime import datetime, timedelta, timezone
 
 import requests
 from dotenv import load_dotenv
 from google.adk.agents import LlmAgent
+from mcp.server import MCPServer
 
 # Load environment variables from .env file
 load_dotenv()
+
+# ---------------------------------------------------------------------------
+# MCP Server Initialization
+# ---------------------------------------------------------------------------
+news_mcp_server = MCPServer(name="PersonaPulse-NewsFetch-Server")
 
 
 # ---------------------------------------------------------------------------
@@ -99,12 +106,13 @@ def save_output_to_data_folder(data_dict: dict, filename: str = "news_fetch_agen
 
 
 # ---------------------------------------------------------------------------
-# 4. Plain Python function that calls NewsAPI
+# 4. MCP Tool: Plain Python function that calls NewsAPI
 # ---------------------------------------------------------------------------
 
+@news_mcp_server.tool()
 def fetch_news_for_topics(topics: list[str], days: int = 7, page_size: int = 20) -> list[dict]:
     """
-    Calls NewsAPI's /everything endpoint and returns raw articles published
+    MCP Tool: Calls NewsAPI's /everything endpoint and returns raw articles published
     in the last `days` days that match any of the given topics.
     """
     api_key = os.environ.get("NEWSAPI_KEY")
@@ -142,12 +150,13 @@ def fetch_news_for_topics(topics: list[str], days: int = 7, page_size: int = 20)
 
 
 # ---------------------------------------------------------------------------
-# 5. Tool wrapper - this is the "MCP-style plug" the agent calls
+# 5. MCP Tool & ADK Tool: Fetches persona news and persists output
 # ---------------------------------------------------------------------------
 
+@news_mcp_server.tool()
 def fetch_persona_news(persona_id: str) -> dict:
     """
-    ADK Tool: Fetches the last 7 days of news for a given persona_id,
+    MCP Tool & ADK Tool: Fetches the last 7 days of news for a given persona_id,
     and automatically saves the output in data/news_fetch_agent_output.json.
     """
     personas = load_personas()
@@ -178,13 +187,59 @@ def fetch_persona_news(persona_id: str) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# 6. The ADK Agent itself
+# 6. MCP Resources & Prompts
+# ---------------------------------------------------------------------------
+
+@news_mcp_server.resource("personas://list")
+def get_personas_resource() -> str:
+    """
+    MCP Resource: Exposes the available persona definitions in JSON format.
+    """
+    try:
+        personas = load_personas()
+        return json.dumps(personas, indent=2)
+    except Exception as e:
+        return json.dumps({"error": str(e)})
+
+
+@news_mcp_server.resource("news://latest")
+def get_latest_news_resource() -> str:
+    """
+    MCP Resource: Exposes the latest fetched news output from data/news_fetch_agent_output.json.
+    """
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    target_paths = [
+        os.path.join(base_dir, "data", "news_fetch_agent_output.json"),
+        os.path.join(os.path.dirname(base_dir), "data", "news_fetch_agent_output.json"),
+    ]
+    for path in target_paths:
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                return f.read()
+
+    return json.dumps({"error": "No news output file found. Run fetch_persona_news first."})
+
+
+@news_mcp_server.prompt("fetch_news_prompt")
+def fetch_news_prompt_template(persona_id: str = "tech_professional") -> str:
+    """
+    MCP Prompt: Provides a formatted instruction prompt for fetching news for a persona.
+    """
+    return (
+        f"You are responsible for fetching news for the persona '{persona_id}'. "
+        f"Call the `fetch_persona_news` tool with persona_id='{persona_id}' "
+        f"and return the resulting raw JSON payload."
+    )
+
+
+# ---------------------------------------------------------------------------
+# 7. The ADK Agent itself
 # ---------------------------------------------------------------------------
 
 news_fetch_agent = LlmAgent(
     name="news_fetch_agent",
     model="gemini-3.1-flash-lite",
-    description="Fetches the last 7 days of news articles relevant to a chosen persona.",
+    description="Fetches the last 7 days of news articles relevant to a chosen persona via MCP/NewsAPI tool.",
     instruction=(
         "You are the News Fetch Agent in the PersonaPulse pipeline. "
         "Your ONLY job is to call the `fetch_persona_news` tool with the "
@@ -203,35 +258,43 @@ news_fetch_agent = LlmAgent(
 
 
 # ---------------------------------------------------------------------------
-# 7. Terminal Execution Test Block
+# 8. Terminal Execution Test Block / MCP Server CLI Entrypoint
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    print("=" * 60)
-    print(" PersonaPulse - News Fetch Agent Execution Test ")
-    print("=" * 60)
-
-    print("\n[Step 1] Verifying NEWSAPI_KEY status...")
-    is_valid = check_news_api_key()
-
-    if is_valid:
-        print("\n[Step 2] Fetching news for persona: 'tech_professional'...")
-        result = fetch_persona_news("tech_professional")
-
-        print("\n[Step 3] Output saved successfully to data/news_fetch_agent_output.json")
-        print("\nFetched Summary:")
-        print(f"  - Persona: {result.get('persona')}")
-        print(f"  - Topics: {result.get('topics')}")
-        print(f"  - Article Count: {result.get('article_count')}")
-
-        print("\nFirst Article Preview:")
-        if result.get("articles"):
-            first_art = result["articles"][0]
-            print(f"  - Title: {first_art.get('title')}")
-            print(f"  - Source: {first_art.get('source')}")
-            print(f"  - URL: {first_art.get('url')}")
-
-        print("\n[COMPLETE] News Fetch Agent executed cleanly!")
+    if "--mcp" in sys.argv:
+        print("Starting News Fetch MCP Server over stdio...", file=sys.stderr)
+        news_mcp_server.run()
     else:
-        print("\n[FAILED] Unable to fetch news because NEWSAPI_KEY is invalid or missing.")
-    print("=" * 60)
+        print("=" * 60)
+        print(" PersonaPulse - News Fetch Agent & MCP Server Test ")
+        print("=" * 60)
+
+        print("\n[Step 1] Verifying NEWSAPI_KEY status...")
+        is_valid = check_news_api_key()
+
+        if is_valid:
+            print("\n[Step 2] Testing MCP tool 'fetch_persona_news' for persona: 'tech_professional'...")
+            result = fetch_persona_news("tech_professional")
+
+            print("\n[Step 3] Output saved successfully to data/news_fetch_agent_output.json")
+            print("\nFetched Summary:")
+            print(f"  - Persona: {result.get('persona')}")
+            print(f"  - Topics: {result.get('topics')}")
+            print(f"  - Article Count: {result.get('article_count')}")
+
+            print("\nFirst Article Preview:")
+            if result.get("articles"):
+                first_art = result["articles"][0]
+                print(f"  - Title: {first_art.get('title')}")
+                print(f"  - Source: {first_art.get('source')}")
+                print(f"  - URL: {first_art.get('url')}")
+
+            print("\n[MCP Test] Testing MCP Resource 'personas://list'...")
+            personas_res = get_personas_resource()
+            print(f"  - Resource payload length: {len(personas_res)} bytes")
+
+            print("\n[COMPLETE] News Fetch Agent & MCP Server verified cleanly!")
+        else:
+            print("\n[FAILED] Unable to fetch news because NEWSAPI_KEY is invalid or missing.")
+        print("=" * 60)

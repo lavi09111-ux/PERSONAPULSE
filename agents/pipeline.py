@@ -199,9 +199,37 @@ async def run_pipeline(persona_id: str) -> dict:
 
 
 if __name__ == "__main__":
-    persona_arg = sys.argv[1] if len(sys.argv) > 1 else "tech_professional"
+    from news_fetch_agent import load_personas
 
-    result = asyncio.run(run_pipeline(persona_arg))
+    persona_arg = sys.argv[1] if len(sys.argv) > 1 else "all"
 
-    print("\nFINAL DIGEST PREVIEW:")
-    print(json.dumps(result, indent=2))
+    if persona_arg.lower() in ("all", "--all"):
+        personas = load_personas()
+        all_results = {}
+        print(f"\n[PIPELINE BATCH TEST] Testing all {len(personas)} personas: {list(personas.keys())}\n")
+
+        for persona_id in personas.keys():
+            print(f"\n>>> Running pipeline for persona: '{persona_id}'...")
+            result = asyncio.run(run_pipeline(persona_id))
+            all_results[persona_id] = result
+
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        target_paths = [
+            os.path.join(base_dir, "data", "all_personas_digests.json"),
+            os.path.join(os.path.dirname(base_dir), "data", "all_personas_digests.json"),
+        ]
+        for path in target_paths:
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(all_results, f, indent=2)
+
+        print("\n" + "=" * 65)
+        print(f" ALL PERSONAS PIPELINE TEST COMPLETED! ({len(all_results)} personas)")
+        print(f" Consolidated output saved to: data/all_personas_digests.json")
+        print("=" * 65)
+
+    else:
+        result = asyncio.run(run_pipeline(persona_arg))
+        print("\nFINAL DIGEST PREVIEW:")
+        print(json.dumps(result, indent=2))
+

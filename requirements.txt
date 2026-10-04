@@ -7,3 +7,7 @@ google-adk>=1.0.0
 
 # Used by the News Fetch Agent to call NewsAPI
 requests>=2.31.0
+
+# Model Context Protocol (MCP) SDK
+mcp>=2.0.0
+
