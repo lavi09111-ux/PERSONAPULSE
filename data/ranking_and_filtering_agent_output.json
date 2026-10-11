@@ -6,7 +6,7 @@
       "published_at": "2026-10-09T15:43:59Z",
       "source": "Business Insider",
       "title": "17 tech executives reveal how AI agents are changing work and hiring",
-      "url": "https://www.businessinsider.com/tech-leaders-using-ai-agents-at-work-2026-10#article"
+      "url": "https://www.businessinsider.com/tech-job-openings-rise-ai-fuels-hardware-engineering-demand-2026-10#article"
     },
     {
       "description": "Established software companies have to rebuild their products around AI, not add it as one more feature, SAP\u2019s chief AI strategy officer Sean Kask said. He spoke at Wave by Vento in Turin on Thursday. \u201cLike the famous quip that every company is becoming a sof\u2026",
@@ -16,25 +16,11 @@
       "url": "https://thenextweb.com/news/sap-sean-kask-prior-labs-every-software-company-ai-company-wave-by-vento"
     },
     {
-      "description": "Upscale AI, a Santa Clara networking startup backed by Nvidia, launched a platform on Thursday that lets data centres link AI chips made by different suppliers,\u00a0Reuters reported. The product, called Token Fabric, was revealed in a company announcement today. \u2026",
+      "description": "Upscale AI, a Santa Clara networking startup backed by Nvidia, launched a platform on Thursday that lets data centres link AI chips made by different suppliers,  Reuters reported. The product, called Token Fabric, was revealed in a company announcement today. \u2026",
       "published_at": "2026-10-08T12:50:29Z",
       "source": "The Next Web",
       "title": "Nvidia-backed Upscale AI launches platform to link chips from rival makers",
       "url": "https://thenextweb.com/news/upscale-ai-token-fabric-nvidia-ai-chip-networking"
-    },
-    {
-      "description": "A very long rant, riffing on the opportunity for bootstrapped startups who seek to create value using AI. I wrote it a while ago, thought it was too long, but in arguing with an AI today (everyone needs a hobby) I realized it was worth sharing: Most AI succes\u2026",
-      "published_at": "2026-10-06T16:57:17Z",
-      "source": "Seths.blog",
-      "title": "Building a second-wave AI business",
-      "url": "https://seths.blog/2026/10/but-is-it-a-business/"
-    },
-    {
-      "description": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could m\u2026",
-      "published_at": "2026-10-08T21:54:31Z",
-      "source": "The Verge",
-      "title": "Anthropic launches free AI security scans for open-source projects",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"
     },
     {
       "description": "Vesta has raised a $30M Series B to expand AI agents that handle mortgage origination work, including underwriting decisions, with three customer lenders among the investors. The same software sold in Europe would be high-risk under the AI Act, and GDPR alrea\u2026",
@@ -44,11 +30,25 @@
       "url": "https://thenextweb.com/news/vesta-30m-mortgage-ai-agents-eu"
     },
     {
-      "description": "Tech job openings are climbing as AI spending fuels hardware demand and software hiring stays resilient.",
-      "published_at": "2026-10-04T09:15:01Z",
-      "source": "Business Insider",
-      "title": "AI was supposed to kill tech jobs. The data on job openings says otherwise.",
-      "url": "https://www.businessinsider.com/tech-job-openings-rise-ai-fuels-hardware-engineering-demand-2026-10#article"
+      "description": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could m\u2026",
+      "published_at": "2026-10-08T21:54:31Z",
+      "source": "The Verge",
+      "title": "Anthropic launches free AI security scans for open-source projects",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"
+    },
+    {
+      "description": "A very long rant, riffing on the opportunity for bootstrapped startups who seek to create value using AI. I wrote it a while ago, thought it was too long, but in arguing with an AI today (everyone needs a hobby) I realized it was worth sharing: Most AI succes\u2026",
+      "published_at": "2026-10-06T16:57:17Z",
+      "source": "Seths.blog",
+      "title": "Building a second-wave AI business",
+      "url": "https://seths.blog/2026/10/but-is-it-a-business/"
+    },
+    {
+      "description": "Huawei and Qualcomm have agreed to a multi-year patent licensing deal covering 5G, AI, computing and networking, and announced the agreement today.  \u201cThis agreement not only demonstrates the value of Huawei\u2019s innovations, but also recognizes Qualcomm\u2019s founda\u2026",
+      "published_at": "2026-10-05T11:19:50Z",
+      "source": "The Next Web",
+      "title": "Huawei and Qualcomm sign patent deal covering 5G, AI and networking",
+      "url": "https://thenextweb.com/news/huawei-qualcomm-patent-deal-5g-ai"
     },
     {
       "description": "Defense startups like Palantir, Anduril, and SpaceX own the technology they're building for the U.S. military. What happens if they decide their interests no longer align with those of the United States'?",
@@ -58,14 +58,14 @@
       "url": "https://gizmodo.com/beware-the-rise-of-the-pentagon-silicon-complex-2000815450"
     },
     {
-      "description": "Huawei and Qualcomm have agreed to a multi-year patent licensing deal covering 5G, AI, computing and networking, and announced the agreement today. \u00a0\u201cThis agreement not only demonstrates the value of Huawei\u2019s innovations, but also recognizes Qualcomm\u2019s founda\u2026",
-      "published_at": "2026-10-05T11:19:50Z",
-      "source": "The Next Web",
-      "title": "Huawei and Qualcomm sign patent deal covering 5G, AI and networking",
-      "url": "https://thenextweb.com/news/huawei-qualcomm-patent-deal-5g-ai"
+      "description": "Tech job openings are climbing as AI spending fuels hardware demand and software hiring stays resilient.",
+      "published_at": "2026-10-04T09:15:01Z",
+      "source": "Business Insider",
+      "title": "AI was supposed to kill tech jobs. The data on job openings says otherwise.",
+      "url": "https://www.businessinsider.com/tech-job-openings-rise-ai-fuels-hardware-engineering-demand-2026-10#article"
     },
     {
-      "description": "Zapata Quantum, a Boston quantum software company, has joined the\u00a0IBM Quantum Network, it said on Tuesday. It will use IBM\u2019s machines to build software for its clients. Zapata does not make quantum hardware. Instead, it helps organisations figure out which pr\u2026",
+      "description": "Zapata Quantum, a Boston quantum software company, has joined the IBM Quantum Network, it said on Tuesday. It will use IBM\u2019s machines to build software for its clients. Zapata does not make quantum hardware. Instead, it helps organisations figure out which pr\u2026",
       "published_at": "2026-10-06T13:23:43Z",
       "source": "The Next Web",
       "title": "Zapata Quantum joins IBM Quantum Network to build quantum applications",

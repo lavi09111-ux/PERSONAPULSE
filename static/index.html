@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PersonaPulse - AI Multi-Agent Personalized News Digest</title>
-  <meta name="description" content="PersonaPulse delivers tailored, multi-agent AI curated news digests based on persona preferences. Powered by Google ADK and Gemini.">
-  
+  <meta name="description"
+    content="PersonaPulse delivers tailored, multi-agent AI curated news digests based on persona preferences. Powered by Google ADK and Gemini.">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
   <div class="app-container">
-    
+
     <!-- Top Navbar -->
     <header class="navbar">
       <div class="brand" id="brand-logo">
@@ -51,16 +56,13 @@
 
     <!-- Main Content -->
     <main class="main-wrapper">
-      
+
       <!-- Persona Selection Bar -->
       <section class="persona-section">
         <div class="section-header">
           <h2 class="section-title">
             <span>👤</span> Active Personas
           </h2>
-          <button class="btn-primary" id="btn-add-persona-modal" style="padding: 0.4rem 0.9rem; font-size: 0.85rem;">
-            <span>➕</span> New Persona
-          </button>
         </div>
         <div class="persona-grid" id="persona-cards-container">
           <!-- Dynamically populated persona cards -->
@@ -69,7 +71,7 @@
 
       <!-- View Container: Digest Feed -->
       <div id="view-feed" class="tab-view active">
-        
+
         <!-- Executive Insight Hero Banner -->
         <section class="insight-hero">
           <div class="insight-header">
@@ -106,7 +108,8 @@
           </div>
 
           <div style="display: flex; align-items: center; gap: 1rem;">
-            <span style="font-size: 0.85rem; color: var(--text-secondary);" id="feed-count-badge">Showing 0 stories</span>
+            <span style="font-size: 0.85rem; color: var(--text-secondary);" id="feed-count-badge">Showing 0
+              stories</span>
             <div class="view-toggle">
               <button class="view-btn active" id="btn-view-grid" title="Grid View">🔲 Grid</button>
               <button class="view-btn" id="btn-view-list" title="List View">☰ List</button>
@@ -129,7 +132,8 @@
                 <span>🤖</span> Google ADK 5-Agent Pipeline Progress
               </h2>
               <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.3rem;">
-                Watch the autonomous agents fetch news via MCP, rank, reshape, synthesize insights, and build your final digest.
+                Watch the autonomous agents fetch news via MCP, rank, reshape, synthesize insights, and build your final
+                digest.
               </p>
             </div>
             <button class="btn-primary" id="btn-run-pipeline-tab">
@@ -166,9 +170,10 @@
           </div>
 
           <div style="margin-top: 2rem;">
-            <h3 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 0.75rem;">Live Agent Telemetry & Log Output</h3>
+            <h3 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 0.75rem;">Live Agent Telemetry & Log
+              Output</h3>
             <div class="json-viewer" id="pipeline-log-output">
-Select a persona and click "Execute Pipeline Live" to trigger the multi-agent execution pipeline.
+              Select a persona and click "Execute Pipeline Live" to trigger the multi-agent execution pipeline.
             </div>
           </div>
         </div>
@@ -180,7 +185,8 @@ Select a persona and click "Execute Pipeline Live" to trigger the multi-agent ex
           <h2 class="section-title">
             <span>📊</span> Intermediate Agent Artifacts Inspector
           </h2>
-          <span style="font-size: 0.85rem; color: var(--text-secondary);">Direct JSON payloads saved in /data folder</span>
+          <span style="font-size: 0.85rem; color: var(--text-secondary);">Direct JSON payloads saved in /data
+            folder</span>
         </div>
         <div class="matrix-container">
           <div class="matrix-sidebar">
@@ -224,14 +230,16 @@ Select a persona and click "Execute Pipeline Live" to trigger the multi-agent ex
           </div>
           <div class="form-group">
             <label class="form-label" for="persona-topics">Topics (comma separated)</label>
-            <input type="text" id="persona-topics" class="form-input" placeholder="e.g. machine learning, robotics, LLMs" required>
+            <input type="text" id="persona-topics" class="form-input"
+              placeholder="e.g. machine learning, robotics, LLMs" required>
           </div>
           <div class="form-group">
             <label class="form-label" for="persona-exclude">Exclude Keywords (comma separated)</label>
             <input type="text" id="persona-exclude" class="form-input" placeholder="e.g. crypto, politics">
           </div>
           <div class="form-actions">
-            <button type="button" class="btn-icon" id="btn-cancel-modal" style="width: auto; padding: 0.6rem 1rem;">Cancel</button>
+            <button type="button" class="btn-icon" id="btn-cancel-modal"
+              style="width: auto; padding: 0.6rem 1rem;">Cancel</button>
             <button type="submit" class="btn-primary">Create Persona</button>
           </div>
         </form>
@@ -248,4 +256,5 @@ Select a persona and click "Execute Pipeline Live" to trigger the multi-agent ex
 
   <script src="/app.js"></script>
 </body>
+
 </html>

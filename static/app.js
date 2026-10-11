@@ -37,15 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const articlesContainer = document.getElementById("articles-container");
   const feedCountBadge = document.getElementById("feed-count-badge");
   const searchInput = document.getElementById("feed-search-input");
-  
+
   const btnRunPipelineMain = document.getElementById("btn-run-pipeline-main");
   const btnRunPipelineTab = document.getElementById("btn-run-pipeline-tab");
   const btnReadAloud = document.getElementById("btn-read-aloud");
   const btnCopyInsight = document.getElementById("btn-copy-insight");
-  
+
   const btnViewGrid = document.getElementById("btn-view-grid");
   const btnViewList = document.getElementById("btn-view-list");
-  
+
   const customModal = document.getElementById("custom-persona-modal");
   const btnAddPersonaModal = document.getElementById("btn-add-persona-modal");
   const btnCancelModal = document.getElementById("btn-cancel-modal");
@@ -201,16 +201,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       personaContainer.appendChild(card);
     });
-
-    // Add Persona Card Button
-    const addCard = document.createElement("div");
-    addCard.className = "persona-card add-persona-card";
-    addCard.onclick = () => openModal();
-    addCard.innerHTML = `
-      <div style="font-size: 1.5rem;">➕</div>
-      <div style="font-size: 0.9rem; font-weight: 600;">Custom Persona</div>
-    `;
-    personaContainer.appendChild(addCard);
   }
 
   function renderDigestHero(digest) {
@@ -278,7 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.addEventListener("click", (e) => {
         const action = btn.dataset.action;
         const idx = parseInt(btn.dataset.idx, 10);
-        
+
         if (action === "like") {
           if (state.likedArticles.has(idx)) {
             state.likedArticles.delete(idx);
@@ -525,50 +515,54 @@ document.addEventListener("DOMContentLoaded", () => {
       showToast("Insight copied to clipboard! 📋");
     });
 
-    // Create Custom Persona Modal
-    btnAddPersonaModal.addEventListener("click", openModal);
-    btnCancelModal.addEventListener("click", closeModal);
-    customModal.addEventListener("click", (e) => {
-      if (e.target === customModal) closeModal();
-    });
+    // Create Custom Persona Modal (if elements exist)
+    if (btnAddPersonaModal) btnAddPersonaModal.addEventListener("click", openModal);
+    if (btnCancelModal) btnCancelModal.addEventListener("click", closeModal);
+    if (customModal) {
+      customModal.addEventListener("click", (e) => {
+        if (e.target === customModal) closeModal();
+      });
+    }
 
-    createPersonaForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const name = document.getElementById("persona-name").value.trim();
-      const topicsStr = document.getElementById("persona-topics").value.trim();
-      const excludeStr = document.getElementById("persona-exclude").value.trim();
+    if (createPersonaForm) {
+      createPersonaForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const name = document.getElementById("persona-name").value.trim();
+        const topicsStr = document.getElementById("persona-topics").value.trim();
+        const excludeStr = document.getElementById("persona-exclude").value.trim();
 
-      if (!name || !topicsStr) {
-        showToast("Please fill in the required fields.", "error");
-        return;
-      }
-
-      const topics = topicsStr.split(",").map(t => t.trim()).filter(Boolean);
-      const exclude_keywords = excludeStr ? excludeStr.split(",").map(k => k.trim()).filter(Boolean) : [];
-      const id = name.toLowerCase().replace(/[^a-z0-9]/g, "_");
-
-      try {
-        const res = await fetch("/api/personas", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ id, display_name: name, topics, exclude_keywords })
-        });
-        const data = await res.json();
-
-        if (data.success) {
-          state.personas = data.personas;
-          state.activePersonaId = id;
-          closeModal();
-          renderPersonas();
-          showToast(`Persona '${name}' created! Click "Refresh Pulse Live" to fetch news.`);
-          loadPersonaDigest(id);
-        } else {
-          showToast(`Error: ${data.error}`, "error");
+        if (!name || !topicsStr) {
+          showToast("Please fill in the required fields.", "error");
+          return;
         }
-      } catch (err) {
-        showToast("Failed to create persona.", "error");
-      }
-    });
+
+        const topics = topicsStr.split(",").map(t => t.trim()).filter(Boolean);
+        const exclude_keywords = excludeStr ? excludeStr.split(",").map(k => k.trim()).filter(Boolean) : [];
+        const id = name.toLowerCase().replace(/[^a-z0-9]/g, "_");
+
+        try {
+          const res = await fetch("/api/personas", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ id, display_name: name, topics, exclude_keywords })
+          });
+          const data = await res.json();
+
+          if (data.success) {
+            state.personas = data.personas;
+            state.activePersonaId = id;
+            closeModal();
+            renderPersonas();
+            showToast(`Persona '${name}' created! Click "Refresh Pulse Live" to fetch news.`);
+            loadPersonaDigest(id);
+          } else {
+            showToast(`Error: ${data.error}`, "error");
+          }
+        } catch (err) {
+          showToast("Failed to create persona.", "error");
+        }
+      });
+    }
   }
 
   function openModal() {
