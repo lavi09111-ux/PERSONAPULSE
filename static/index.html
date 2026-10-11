@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PersonaPulse - AI Multi-Agent Personalized News Digest</title>
+  <meta name="description" content="PersonaPulse delivers tailored, multi-agent AI curated news digests based on persona preferences. Powered by Google ADK and Gemini.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Top Navbar -->
+    <header class="navbar">
+      <div class="brand" id="brand-logo">
+        <div class="brand-icon">⚡</div>
+        <div>
+          <span class="brand-title">PersonaPulse</span>
+          <span class="brand-badge">ADK 5-Agent Suite</span>
+        </div>
+      </div>
+
+      <nav class="nav-tabs">
+        <button class="nav-tab active" data-tab="feed">
+          <span>📰</span> Digest Feed
+        </button>
+        <button class="nav-tab" data-tab="pipeline">
+          <span>🤖</span> Agent Pipeline
+        </button>
+        <button class="nav-tab" data-tab="matrix">
+          <span>📊</span> Data Matrix
+        </button>
+      </nav>
+
+      <div class="header-actions">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Agents Ready</span>
+        </div>
+        <button class="btn-icon" id="btn-theme-toggle" title="Toggle Theme">
+          🌙
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-wrapper">
+      
+      <!-- Persona Selection Bar -->
+      <section class="persona-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>👤</span> Active Personas
+          </h2>
+          <button class="btn-primary" id="btn-add-persona-modal" style="padding: 0.4rem 0.9rem; font-size: 0.85rem;">
+            <span>➕</span> New Persona
+          </button>
+        </div>
+        <div class="persona-grid" id="persona-cards-container">
+          <!-- Dynamically populated persona cards -->
+        </div>
+      </section>
+
+      <!-- View Container: Digest Feed -->
+      <div id="view-feed" class="tab-view active">
+        
+        <!-- Executive Insight Hero Banner -->
+        <section class="insight-hero">
+          <div class="insight-header">
+            <span class="insight-tag">
+              <span>✨</span> Gemini AI Weekly Pulse Summary
+            </span>
+            <div class="insight-actions">
+              <button class="btn-icon" id="btn-read-aloud" title="Read Pulse Aloud (TTS)">
+                🔊
+              </button>
+              <button class="btn-icon" id="btn-copy-insight" title="Copy Summary">
+                📋
+              </button>
+              <button class="btn-primary" id="btn-run-pipeline-main">
+                <span>⚡</span> Refresh Pulse Live
+              </button>
+            </div>
+          </div>
+          <p class="insight-content" id="hero-insight-text">
+            Loading persona insight pulse...
+          </p>
+          <div class="insight-meta">
+            <span id="meta-persona-name">Persona: Loading...</span>
+            <span id="meta-article-count">Articles: 0</span>
+            <span id="meta-generated-at">Updated: Just now</span>
+          </div>
+        </section>
+
+        <!-- Articles Feed Toolbar -->
+        <div class="feed-toolbar">
+          <div class="search-box">
+            <span>🔍</span>
+            <input type="text" id="feed-search-input" class="search-input" placeholder="Search curated articles...">
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span style="font-size: 0.85rem; color: var(--text-secondary);" id="feed-count-badge">Showing 0 stories</span>
+            <div class="view-toggle">
+              <button class="view-btn active" id="btn-view-grid" title="Grid View">🔲 Grid</button>
+              <button class="view-btn" id="btn-view-list" title="List View">☰ List</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Articles Grid -->
+        <section class="article-grid" id="articles-container">
+          <!-- Article cards injected dynamically -->
+        </section>
+      </div>
+
+      <!-- View Container: Agent Pipeline -->
+      <div id="view-pipeline" class="tab-view" style="display: none;">
+        <div class="pipeline-container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">
+                <span>🤖</span> Google ADK 5-Agent Pipeline Progress
+              </h2>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.3rem;">
+                Watch the autonomous agents fetch news via MCP, rank, reshape, synthesize insights, and build your final digest.
+              </p>
+            </div>
+            <button class="btn-primary" id="btn-run-pipeline-tab">
+              <span>🚀</span> Execute Pipeline Live
+            </button>
+          </div>
+
+          <div class="pipeline-stepper" id="pipeline-stepper">
+            <div class="pipeline-step" id="step-1">
+              <div class="step-circle">1</div>
+              <div class="step-label">Fetch News</div>
+              <div class="step-agent">News Fetch Agent (MCP)</div>
+            </div>
+            <div class="pipeline-step" id="step-2">
+              <div class="step-circle">2</div>
+              <div class="step-label">Rank & Filter</div>
+              <div class="step-agent">Ranking Agent</div>
+            </div>
+            <div class="pipeline-step" id="step-3">
+              <div class="step-circle">3</div>
+              <div class="step-label">Reshape Content</div>
+              <div class="step-agent">Content Reshaping Agent</div>
+            </div>
+            <div class="pipeline-step" id="step-4">
+              <div class="step-circle">4</div>
+              <div class="step-label">Generate Insight</div>
+              <div class="step-agent">Insight Generation Agent</div>
+            </div>
+            <div class="pipeline-step" id="step-5">
+              <div class="step-circle">5</div>
+              <div class="step-label">Present Digest</div>
+              <div class="step-agent">Presentation Agent</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h3 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 0.75rem;">Live Agent Telemetry & Log Output</h3>
+            <div class="json-viewer" id="pipeline-log-output">
+Select a persona and click "Execute Pipeline Live" to trigger the multi-agent execution pipeline.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- View Container: Data Matrix -->
+      <div id="view-matrix" class="tab-view" style="display: none;">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span>📊</span> Intermediate Agent Artifacts Inspector
+          </h2>
+          <span style="font-size: 0.85rem; color: var(--text-secondary);">Direct JSON payloads saved in /data folder</span>
+        </div>
+        <div class="matrix-container">
+          <div class="matrix-sidebar">
+            <button class="matrix-tab active" data-artifact="step1_news_fetch">
+              <span>1. News Fetch</span>
+              <span>📄</span>
+            </button>
+            <button class="matrix-tab" data-artifact="step2_ranking">
+              <span>2. Ranking & Filter</span>
+              <span>📄</span>
+            </button>
+            <button class="matrix-tab" data-artifact="step3_reshaping">
+              <span>3. Reshaping</span>
+              <span>📄</span>
+            </button>
+            <button class="matrix-tab" data-artifact="step4_insight">
+              <span>4. Insight Gen</span>
+              <span>📄</span>
+            </button>
+            <button class="matrix-tab" data-artifact="step5_presentation">
+              <span>5. Final Digest</span>
+              <span>📄</span>
+            </button>
+          </div>
+          <div class="matrix-content">
+            <div class="json-viewer" id="matrix-json-viewer">Loading artifact data...</div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Create Custom Persona Modal -->
+    <div class="modal-overlay" id="custom-persona-modal">
+      <div class="modal-card">
+        <h3 class="modal-title">Create Custom Persona</h3>
+        <form id="create-persona-form">
+          <div class="form-group">
+            <label class="form-label" for="persona-name">Display Name</label>
+            <input type="text" id="persona-name" class="form-input" placeholder="e.g. AI Researcher or Gamer" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="persona-topics">Topics (comma separated)</label>
+            <input type="text" id="persona-topics" class="form-input" placeholder="e.g. machine learning, robotics, LLMs" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="persona-exclude">Exclude Keywords (comma separated)</label>
+            <input type="text" id="persona-exclude" class="form-input" placeholder="e.g. crypto, politics">
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn-icon" id="btn-cancel-modal" style="width: auto; padding: 0.6rem 1rem;">Cancel</button>
+            <button type="submit" class="btn-primary">Create Persona</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast-notification">
+      <span id="toast-icon">⚡</span>
+      <span id="toast-message">Notification message here</span>
+    </div>
+
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

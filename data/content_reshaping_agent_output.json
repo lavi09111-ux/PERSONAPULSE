@@ -1,124 +1,124 @@
 {
-  "persona": "Student",
+  "persona": "Tech Professional",
   "articles": [
     {
-      "title": "Millions of student-loan accounts are being transferred to the Treasury \u2014 and the first phase is launching",
-      "description": "The Trump administration is launching its new \"Default Resolution Hub\" for student-loan borrowers as part of the transfer of accounts to the Treasury.",
-      "url": "https://www.businessinsider.com/student-loan-transfer-to-treasury-first-phase-defaults-repayment-launching-2026-9#article",
+      "title": "17 tech executives reveal how AI agents are changing work and hiring",
+      "description": "Tech leaders from Zoom, Figma, ServiceNow, and more reveal how AI agents are reshaping work, hiring, and the software business.",
+      "url": "https://www.businessinsider.com/tech-leaders-using-ai-agents-at-work-2026-10#article",
       "source": "Business Insider",
-      "published_at": "2026-09-30T13:30:01Z",
+      "published_at": "2026-10-09T15:43:59Z",
       "bullet_points": [
-        "The government is moving some student loan accounts to the Treasury Department.",
-        "A new system called the Default Resolution Hub is being launched.",
-        "This is the first phase of a process to handle student loan defaults."
+        "Tech leaders are using AI agents to change how businesses operate.",
+        "These tools are influencing hiring practices in major software companies.",
+        "AI agents are now considered essential for modern business workflows."
       ]
     },
     {
-      "title": "Student-loan borrowers now have 3 more months to enroll in a temporary repayment benefit",
-      "description": "The Education Department extended the deadline for student-loan borrowers to enroll in autopay and get a 1-percentage-point interest rate reduction.",
-      "url": "https://www.businessinsider.com/student-loan-borrowers-3-more-months-autopay-repayment-interest-rates-2026-9#article",
+      "title": "SAP\u2019s Sean Kask: software firms must become AI companies or perish",
+      "description": "Established software companies have to rebuild their products around AI, not add it as one more feature, SAP\u2019s chief AI strategy officer Sean Kask said. He spoke at Wave by Vento in Turin on Thursday. \u201cLike the famous quip that every company is becoming a sof\u2026",
+      "url": "https://thenextweb.com/news/sap-sean-kask-prior-labs-every-software-company-ai-company-wave-by-vento",
+      "source": "The Next Web",
+      "published_at": "2026-10-08T17:23:55Z",
+      "bullet_points": [
+        "Software companies must build products around AI from the ground up.",
+        "Treating AI as just an extra feature is no longer enough.",
+        "Companies that fail to fully adopt AI strategies risk going out of business."
+      ]
+    },
+    {
+      "title": "Nvidia-backed Upscale AI launches platform to link chips from rival makers",
+      "description": "Upscale AI, a Santa Clara networking startup backed by Nvidia, launched a platform on Thursday that lets data centres link AI chips made by different suppliers,\u00a0Reuters reported. The product, called Token Fabric, was revealed in a company announcement today. \u2026",
+      "url": "https://thenextweb.com/news/upscale-ai-token-fabric-nvidia-ai-chip-networking",
+      "source": "The Next Web",
+      "published_at": "2026-10-08T12:50:29Z",
+      "bullet_points": [
+        "Upscale AI released a new platform called Token Fabric.",
+        "The software allows data centers to connect AI chips from different manufacturers.",
+        "This tool helps solve compatibility issues between hardware suppliers."
+      ]
+    },
+    {
+      "title": "Building a second-wave AI business",
+      "description": "A very long rant, riffing on the opportunity for bootstrapped startups who seek to create value using AI. I wrote it a while ago, thought it was too long, but in arguing with an AI today (everyone needs a hobby) I realized it was worth sharing: Most AI succes\u2026",
+      "url": "https://seths.blog/2026/10/but-is-it-a-business/",
+      "source": "Seths.blog",
+      "published_at": "2026-10-06T16:57:17Z",
+      "bullet_points": [
+        "There are new opportunities for bootstrapped startups in the AI space.",
+        "Success in AI business requires creating genuine value for users.",
+        "The current AI market is moving into a second, more mature wave."
+      ]
+    },
+    {
+      "title": "Anthropic launches free AI security scans for open-source projects",
+      "description": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could m\u2026",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+      "source": "The Verge",
+      "published_at": "2026-10-08T21:54:31Z",
+      "bullet_points": [
+        "Anthropic introduced a free security tool called OSS Scanner.",
+        "It helps open-source projects find bugs and vulnerabilities.",
+        "Projects can choose to receive regular scans from powerful AI models."
+      ]
+    },
+    {
+      "title": "Vesta raises $30M for AI agents that work on mortgage decisions",
+      "description": "Vesta has raised a $30M Series B to expand AI agents that handle mortgage origination work, including underwriting decisions, with three customer lenders among the investors. The same software sold in Europe would be high-risk under the AI Act, and GDPR alrea\u2026",
+      "url": "https://thenextweb.com/news/vesta-30m-mortgage-ai-agents-eu",
+      "source": "The Next Web",
+      "published_at": "2026-10-09T18:59:29Z",
+      "bullet_points": [
+        "Vesta secured $30 million to expand its AI for mortgage processing.",
+        "The AI handles tasks like underwriting and mortgage approvals.",
+        "The software faces regulatory challenges in the European market."
+      ]
+    },
+    {
+      "title": "AI was supposed to kill tech jobs. The data on job openings says otherwise.",
+      "description": "Tech job openings are climbing as AI spending fuels hardware demand and software hiring stays resilient.",
+      "url": "https://www.businessinsider.com/tech-job-openings-rise-ai-fuels-hardware-engineering-demand-2026-10#article",
       "source": "Business Insider",
-      "published_at": "2026-09-29T14:45:18Z",
+      "published_at": "2026-10-04T09:15:01Z",
       "bullet_points": [
-        "You now have three extra months to sign up for a special benefit.",
-        "Enroll in autopay to receive a one-percent interest rate reduction.",
-        "The Education Department extended this deadline for student loan borrowers."
+        "Tech job openings are increasing despite concerns about AI.",
+        "High demand for AI hardware is driving new hiring.",
+        "Software engineering jobs remain stable and resilient."
       ]
     },
     {
-      "title": "I turned down a scholarship at UPenn to attend the more expensive Columbia. I still wonder if I made the right choice.",
-      "description": "I chose to attend Columbia because I always loved the idea of living and working in New York City. But I wonder if that dream was too high a price.",
-      "url": "https://www.businessinsider.com/chose-columbia-over-upenn-scholarship-at-penn-right-choice-2026-9#article",
-      "source": "Business Insider",
-      "published_at": "2026-09-29T16:25:50Z",
+      "title": "Beware the Rise of the \u2018Pentagon-Silicon Complex\u2019",
+      "description": "Defense startups like Palantir, Anduril, and SpaceX own the technology they're building for the U.S. military. What happens if they decide their interests no longer align with those of the United States'?",
+      "url": "https://gizmodo.com/beware-the-rise-of-the-pentagon-silicon-complex-2000815450",
+      "source": "Gizmodo.com",
+      "published_at": "2026-10-05T13:15:46Z",
       "bullet_points": [
-        "The author chose a more expensive university over one that offered a scholarship.",
-        "The decision was based on a dream to live in New York City.",
-        "The author reflects on whether the high cost was worth the trade-off."
+        "Private companies now own much of the technology used by the U.S. military.",
+        "This shift creates a new dynamic called the 'Pentagon-Silicon Complex'.",
+        "There are concerns about what happens if these companies disagree with the government."
       ]
     },
     {
-      "title": "Watch: Why students in France are protesting",
-      "description": "Demonstrations started in the French capital, then spread across the country in the days that followed.",
-      "url": "https://www.bbc.co.uk/news/videos/cr5ynddn318eo",
-      "source": "BBC News",
-      "published_at": "2026-10-02T15:02:15Z",
+      "title": "Huawei and Qualcomm sign patent deal covering 5G, AI and networking",
+      "description": "Huawei and Qualcomm have agreed to a multi-year patent licensing deal covering 5G, AI, computing and networking, and announced the agreement today. \u00a0\u201cThis agreement not only demonstrates the value of Huawei\u2019s innovations, but also recognizes Qualcomm\u2019s founda\u2026",
+      "url": "https://thenextweb.com/news/huawei-qualcomm-patent-deal-5g-ai",
+      "source": "The Next Web",
+      "published_at": "2026-10-05T11:19:50Z",
       "bullet_points": [
-        "Students in France have started protesting.",
-        "The demonstrations began in Paris.",
-        "The protests have now spread across the entire country."
+        "Qualcomm and Huawei signed a long-term patent agreement.",
+        "The deal covers technologies like 5G and AI.",
+        "The partnership spans computing and network infrastructure."
       ]
     },
     {
-      "title": "Trump administration implementing school choice tax credit",
-      "description": "The program povides a dollar-for-dollar credit of up to $1,700 for individuals.",
-      "url": "https://abcnews.com/Politics/trump-administration-implementing-school-choice-tax-credit/story?id=136896368",
-      "source": "Abcnews.com",
-      "published_at": "2026-10-01T19:50:39Z",
+      "title": "Zapata Quantum joins IBM Quantum Network to build quantum applications",
+      "description": "Zapata Quantum, a Boston quantum software company, has joined the\u00a0IBM Quantum Network, it said on Tuesday. It will use IBM\u2019s machines to build software for its clients. Zapata does not make quantum hardware. Instead, it helps organisations figure out which pr\u2026",
+      "url": "https://thenextweb.com/news/zapata-quantum-ibm-quantum-network",
+      "source": "The Next Web",
+      "published_at": "2026-10-06T13:23:43Z",
       "bullet_points": [
-        "A new school choice tax credit program is being launched.",
-        "Individuals can receive a credit of up to $1,700.",
-        "This is a dollar-for-dollar tax credit program."
-      ]
-    },
-    {
-      "title": "Thinking about a career pivot? A Google engineer shares what he learned from taking a leap of faith.",
-      "description": "Prerit Pathak worked as a software engineer before switching to cybersecurity and joining Google. He shared his advice for making the pivot.",
-      "url": "https://www.businessinsider.com/google-engineer-switch-software-engineering-cybersecurity-big-tech-career-advice-2026-10#article",
-      "source": "Business Insider",
-      "published_at": "2026-10-01T09:29:01Z",
-      "bullet_points": [
-        "A software engineer successfully switched to a career in cybersecurity.",
-        "He now works at Google after making the transition.",
-        "He offers advice to others looking to change their career paths."
-      ]
-    },
-    {
-      "title": "David Rubenstein shares his recipe for career success \u2014 and says boomers like him 'don't want to get off the stage'",
-      "description": "David Rubenstein, Carlyle's billionaire cofounder, told BI that people need the same basic skills to succeed today, and he won't retire anytime soon.",
-      "url": "https://www.businessinsider.com/david-rubenstein-career-strategy-skills-ai-jobs-retirement-baby-boomers-2026-9#article",
-      "source": "Business Insider",
-      "published_at": "2026-09-27T09:33:01Z",
-      "bullet_points": [
-        "Billionaire David Rubenstein says basic skills are still key to success.",
-        "He believes baby boomers are not ready to retire yet.",
-        "He shares his perspective on career longevity in the modern workforce."
-      ]
-    },
-    {
-      "title": "The hidden sacrifices of chasing an H-1B career in America",
-      "description": "The H-1B visa that allows highly skilled foreign workers to build a career in the US can also make it hard to know how firmly to establish a life here.",
-      "url": "https://www.businessinsider.com/h-1b-visa-hidden-sacrifices-career-costs-american-dream-2026-9#article",
-      "source": "Business Insider",
-      "published_at": "2026-09-28T09:56:46Z",
-      "bullet_points": [
-        "H-1B visas allow foreign workers to build careers in the U.S.",
-        "These workers often face challenges in establishing a permanent life.",
-        "There are hidden personal sacrifices involved in this career path."
-      ]
-    },
-    {
-      "title": "Nestl\u00e9's CEO says these 3 qualities will get you promoted",
-      "description": "As Philipp Navratil has moved up the Nestl\u00e9 career ladder, he said he's noticed traits that consistently set apart workers who earn promotions.",
-      "url": "https://www.businessinsider.com/nestle-ceo-qualities-get-promotion-2026-10#article",
-      "source": "Business Insider",
-      "published_at": "2026-10-01T09:38:01Z",
-      "bullet_points": [
-        "A Nestl\u00e9 executive identifies key traits for moving up the ladder.",
-        "Certain qualities help employees stand out to management.",
-        "These traits are linked to earning consistent promotions."
-      ]
-    },
-    {
-      "title": "A former BCG partner says leaving consulting taught him how to build",
-      "description": "Daniel Dantus spent eight years at BCG before transitioning to Juul. Here's his advice on building a career post consulting.",
-      "url": "https://www.businessinsider.com/bcg-partner-to-juul-skan-tech-consulting-transition-2026-9#article",
-      "source": "Business Insider",
-      "published_at": "2026-09-27T09:31:01Z",
-      "bullet_points": [
-        "A former consulting partner changed career paths.",
-        "He explains what he learned after leaving his consulting firm.",
-        "He shares advice on how to build a new career after consulting."
+        "Zapata Quantum joined the IBM Quantum Network.",
+        "The company will use IBM hardware to develop software applications.",
+        "Zapata focuses on helping businesses identify useful quantum computing problems."
       ]
     }
   ]

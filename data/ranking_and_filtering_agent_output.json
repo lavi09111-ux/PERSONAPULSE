@@ -1,75 +1,75 @@
 {
-  "persona": "Student",
+  "persona": "Tech Professional",
   "articles": [
     {
-      "title": "Millions of student-loan accounts are being transferred to the Treasury \u2014 and the first phase is launching",
-      "description": "The Trump administration is launching its new \"Default Resolution Hub\" for student-loan borrowers as part of the transfer of accounts to the Treasury.",
-      "url": "https://www.businessinsider.com/student-loan-transfer-to-treasury-first-phase-defaults-repayment-launching-2026-9#article",
+      "description": "Tech leaders from Zoom, Figma, ServiceNow, and more reveal how AI agents are reshaping work, hiring, and the software business.",
+      "published_at": "2026-10-09T15:43:59Z",
       "source": "Business Insider",
-      "published_at": "2026-09-30T13:30:01Z"
+      "title": "17 tech executives reveal how AI agents are changing work and hiring",
+      "url": "https://www.businessinsider.com/tech-leaders-using-ai-agents-at-work-2026-10#article"
     },
     {
-      "title": "Student-loan borrowers now have 3 more months to enroll in a temporary repayment benefit",
-      "description": "The Education Department extended the deadline for student-loan borrowers to enroll in autopay and get a 1-percentage-point interest rate reduction.",
-      "url": "https://www.businessinsider.com/student-loan-borrowers-3-more-months-autopay-repayment-interest-rates-2026-9#article",
+      "description": "Established software companies have to rebuild their products around AI, not add it as one more feature, SAP\u2019s chief AI strategy officer Sean Kask said. He spoke at Wave by Vento in Turin on Thursday. \u201cLike the famous quip that every company is becoming a sof\u2026",
+      "published_at": "2026-10-08T17:23:55Z",
+      "source": "The Next Web",
+      "title": "SAP\u2019s Sean Kask: software firms must become AI companies or perish",
+      "url": "https://thenextweb.com/news/sap-sean-kask-prior-labs-every-software-company-ai-company-wave-by-vento"
+    },
+    {
+      "description": "Upscale AI, a Santa Clara networking startup backed by Nvidia, launched a platform on Thursday that lets data centres link AI chips made by different suppliers,\u00a0Reuters reported. The product, called Token Fabric, was revealed in a company announcement today. \u2026",
+      "published_at": "2026-10-08T12:50:29Z",
+      "source": "The Next Web",
+      "title": "Nvidia-backed Upscale AI launches platform to link chips from rival makers",
+      "url": "https://thenextweb.com/news/upscale-ai-token-fabric-nvidia-ai-chip-networking"
+    },
+    {
+      "description": "A very long rant, riffing on the opportunity for bootstrapped startups who seek to create value using AI. I wrote it a while ago, thought it was too long, but in arguing with an AI today (everyone needs a hobby) I realized it was worth sharing: Most AI succes\u2026",
+      "published_at": "2026-10-06T16:57:17Z",
+      "source": "Seths.blog",
+      "title": "Building a second-wave AI business",
+      "url": "https://seths.blog/2026/10/but-is-it-a-business/"
+    },
+    {
+      "description": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could m\u2026",
+      "published_at": "2026-10-08T21:54:31Z",
+      "source": "The Verge",
+      "title": "Anthropic launches free AI security scans for open-source projects",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"
+    },
+    {
+      "description": "Vesta has raised a $30M Series B to expand AI agents that handle mortgage origination work, including underwriting decisions, with three customer lenders among the investors. The same software sold in Europe would be high-risk under the AI Act, and GDPR alrea\u2026",
+      "published_at": "2026-10-09T18:59:29Z",
+      "source": "The Next Web",
+      "title": "Vesta raises $30M for AI agents that work on mortgage decisions",
+      "url": "https://thenextweb.com/news/vesta-30m-mortgage-ai-agents-eu"
+    },
+    {
+      "description": "Tech job openings are climbing as AI spending fuels hardware demand and software hiring stays resilient.",
+      "published_at": "2026-10-04T09:15:01Z",
       "source": "Business Insider",
-      "published_at": "2026-09-29T14:45:18Z"
+      "title": "AI was supposed to kill tech jobs. The data on job openings says otherwise.",
+      "url": "https://www.businessinsider.com/tech-job-openings-rise-ai-fuels-hardware-engineering-demand-2026-10#article"
     },
     {
-      "title": "I turned down a scholarship at UPenn to attend the more expensive Columbia. I still wonder if I made the right choice.",
-      "description": "I chose to attend Columbia because I always loved the idea of living and working in New York City. But I wonder if that dream was too high a price.",
-      "url": "https://www.businessinsider.com/chose-columbia-over-upenn-scholarship-at-penn-right-choice-2026-9#article",
-      "source": "Business Insider",
-      "published_at": "2026-09-29T16:25:50Z"
+      "description": "Defense startups like Palantir, Anduril, and SpaceX own the technology they're building for the U.S. military. What happens if they decide their interests no longer align with those of the United States'?",
+      "published_at": "2026-10-05T13:15:46Z",
+      "source": "Gizmodo.com",
+      "title": "Beware the Rise of the \u2018Pentagon-Silicon Complex\u2019",
+      "url": "https://gizmodo.com/beware-the-rise-of-the-pentagon-silicon-complex-2000815450"
     },
     {
-      "title": "Watch: Why students in France are protesting",
-      "description": "Demonstrations started in the French capital, then spread across the country in the days that followed.",
-      "url": "https://www.bbc.co.uk/news/videos/cr5ynddn318eo",
-      "source": "BBC News",
-      "published_at": "2026-10-02T15:02:15Z"
+      "description": "Huawei and Qualcomm have agreed to a multi-year patent licensing deal covering 5G, AI, computing and networking, and announced the agreement today. \u00a0\u201cThis agreement not only demonstrates the value of Huawei\u2019s innovations, but also recognizes Qualcomm\u2019s founda\u2026",
+      "published_at": "2026-10-05T11:19:50Z",
+      "source": "The Next Web",
+      "title": "Huawei and Qualcomm sign patent deal covering 5G, AI and networking",
+      "url": "https://thenextweb.com/news/huawei-qualcomm-patent-deal-5g-ai"
     },
     {
-      "title": "Trump administration implementing school choice tax credit",
-      "description": "The program povides a dollar-for-dollar credit of up to $1,700 for individuals.",
-      "url": "https://abcnews.com/Politics/trump-administration-implementing-school-choice-tax-credit/story?id=136896368",
-      "source": "Abcnews.com",
-      "published_at": "2026-10-01T19:50:39Z"
-    },
-    {
-      "title": "Thinking about a career pivot? A Google engineer shares what he learned from taking a leap of faith.",
-      "description": "Prerit Pathak worked as a software engineer before switching to cybersecurity and joining Google. He shared his advice for making the pivot.",
-      "url": "https://www.businessinsider.com/google-engineer-switch-software-engineering-cybersecurity-big-tech-career-advice-2026-10#article",
-      "source": "Business Insider",
-      "published_at": "2026-10-01T09:29:01Z"
-    },
-    {
-      "title": "David Rubenstein shares his recipe for career success \u2014 and says boomers like him 'don't want to get off the stage'",
-      "description": "David Rubenstein, Carlyle's billionaire cofounder, told BI that people need the same basic skills to succeed today, and he won't retire anytime soon.",
-      "url": "https://www.businessinsider.com/david-rubenstein-career-strategy-skills-ai-jobs-retirement-baby-boomers-2026-9#article",
-      "source": "Business Insider",
-      "published_at": "2026-09-27T09:33:01Z"
-    },
-    {
-      "title": "The hidden sacrifices of chasing an H-1B career in America",
-      "description": "The H-1B visa that allows highly skilled foreign workers to build a career in the US can also make it hard to know how firmly to establish a life here.",
-      "url": "https://www.businessinsider.com/h-1b-visa-hidden-sacrifices-career-costs-american-dream-2026-9#article",
-      "source": "Business Insider",
-      "published_at": "2026-09-28T09:56:46Z"
-    },
-    {
-      "title": "Nestl\u00e9's CEO says these 3 qualities will get you promoted",
-      "description": "As Philipp Navratil has moved up the Nestl\u00e9 career ladder, he said he's noticed traits that consistently set apart workers who earn promotions.",
-      "url": "https://www.businessinsider.com/nestle-ceo-qualities-get-promotion-2026-10#article",
-      "source": "Business Insider",
-      "published_at": "2026-10-01T09:38:01Z"
-    },
-    {
-      "title": "A former BCG partner says leaving consulting taught him how to build",
-      "description": "Daniel Dantus spent eight years at BCG before transitioning to Juul. Here's his advice on building a career post consulting.",
-      "url": "https://www.businessinsider.com/bcg-partner-to-juul-skan-tech-consulting-transition-2026-9#article",
-      "source": "Business Insider",
-      "published_at": "2026-09-27T09:31:01Z"
+      "description": "Zapata Quantum, a Boston quantum software company, has joined the\u00a0IBM Quantum Network, it said on Tuesday. It will use IBM\u2019s machines to build software for its clients. Zapata does not make quantum hardware. Instead, it helps organisations figure out which pr\u2026",
+      "published_at": "2026-10-06T13:23:43Z",
+      "source": "The Next Web",
+      "title": "Zapata Quantum joins IBM Quantum Network to build quantum applications",
+      "url": "https://thenextweb.com/news/zapata-quantum-ibm-quantum-network"
     }
   ]
 }

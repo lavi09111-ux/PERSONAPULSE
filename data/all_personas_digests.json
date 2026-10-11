@@ -1,127 +1,127 @@
 {
   "tech_professional": {
     "persona": "Tech Professional",
-    "generated_at": "2026-10-03T14:35:54.234404+00:00",
-    "insight": "The artificial intelligence landscape is rapidly maturing, shifting from simple software adoption toward a focus on strategic integration, safety, and infrastructure. While companies are successfully building their own internal tools to reduce SaaS reliance, the industry is simultaneously grappling with severe security risks and intense competition for specialized robotics and AI talent. Ultimately, leaders are learning that long-term success requires balancing aggressive innovation with rigorous safety protocols and clear strategic direction.",
+    "generated_at": "2026-10-11T06:13:01.426188+00:00",
+    "insight": "The tech industry is rapidly transitioning from experimental AI adoption to deeply integrated, agent-based business models that are reshaping hiring and operational workflows. As organizations move beyond treating AI as a mere feature toward a fundamental re-architecture of their software, demand remains resilient for specialized hardware and infrastructure that bridges different computing ecosystems. This shift signals a maturing market where long-term value is increasingly dependent on deep systemic integration and the strategic scaling of autonomous AI tools.",
     "article_count": 10,
     "articles": [
       {
-        "title": "Google announces Gemini 4 and says it\u2019s so capable that only \u2018trusted cyber defenders\u2019 can have it right now",
-        "url": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-        "source": "The Verge",
-        "published_at": "2026-09-30T20:41:41Z",
-        "bullet_points": [
-          "Google introduced a new AI model called Gemini 4 Argon.",
-          "It is designed to handle complex tasks in software engineering, law, finance, and cybersecurity.",
-          "Access is currently limited to trusted cybersecurity professionals for safety reasons."
-        ],
-        "feedback": null
-      },
-      {
-        "title": "Nvidia says its new AI safety platform can contain rogue agents within \u2018milliseconds\u2019",
-        "url": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
-        "source": "The Verge",
-        "published_at": "2026-09-28T13:36:06Z",
-        "bullet_points": [
-          "Nvidia launched a new platform to monitor and contain AI agents.",
-          "The tool is designed to stop rogue AI activity within milliseconds.",
-          "The launch follows recent security concerns regarding AI-driven hacking incidents."
-        ],
-        "feedback": null
-      },
-      {
-        "title": "SaaS companies' newest rivals are their own customers",
-        "url": "https://www.businessinsider.com/spotify-twilio-using-ai-build-software-saaspocalypse-2026-9#article",
+        "title": "17 tech executives reveal how AI agents are changing work and hiring",
+        "url": "https://www.businessinsider.com/tech-leaders-using-ai-agents-at-work-2026-10#article",
         "source": "Business Insider",
-        "published_at": "2026-09-30T09:52:01Z",
+        "published_at": "2026-10-09T15:43:59Z",
         "bullet_points": [
-          "Large companies are increasingly using AI to build their own internal software tools.",
-          "This shift reduces their reliance on traditional software-as-a-service (SaaS) providers.",
-          "Major brands like Spotify and Twilio are already adopting this strategy."
+          "Tech leaders are using AI agents to change how businesses operate.",
+          "These tools are influencing hiring practices in major software companies.",
+          "AI agents are now considered essential for modern business workflows."
         ],
         "feedback": null
       },
       {
-        "title": "MuleSoft founder\u2019s DIG Ventures closes $120M fund for AI infrastructure",
-        "url": "https://thenextweb.com/news/dig-ventures-120m-fund-iii-ai-infrastructure",
+        "title": "SAP\u2019s Sean Kask: software firms must become AI companies or perish",
+        "url": "https://thenextweb.com/news/sap-sean-kask-prior-labs-every-software-company-ai-company-wave-by-vento",
         "source": "The Next Web",
-        "published_at": "2026-10-01T08:09:38Z",
+        "published_at": "2026-10-08T17:23:55Z",
         "bullet_points": [
-          "DIG Ventures raised $120 million for its third investment fund.",
-          "The fund will support about 30 European startups.",
-          "Focus is placed on companies building software infrastructure for AI."
+          "Software companies must build products around AI from the ground up.",
+          "Treating AI as just an extra feature is no longer enough.",
+          "Companies that fail to fully adopt AI strategies risk going out of business."
         ],
         "feedback": null
       },
       {
-        "title": "Nvidia's robotics lab is becoming a founder factory",
-        "url": "https://www.businessinsider.com/nvidia-alumni-fueling-new-wave-robotics-ai-startups-2026-9#article",
-        "source": "Business Insider",
-        "published_at": "2026-09-29T09:00:01Z",
-        "bullet_points": [
-          "Many former employees from Nvidia\u2019s robotics lab are starting their own AI companies.",
-          "Increased venture capital is fueling this startup boom.",
-          "Nvidia stands to benefit as these new startups utilize their technology."
-        ],
-        "feedback": null
-      },
-      {
-        "title": "The AI race is becoming a test of strategy, not just software",
-        "url": "https://thenextweb.com/news/the-ai-race-is-becoming-a-test-of-strategy-not-just-software",
+        "title": "Nvidia-backed Upscale AI launches platform to link chips from rival makers",
+        "url": "https://thenextweb.com/news/upscale-ai-token-fabric-nvidia-ai-chip-networking",
         "source": "The Next Web",
-        "published_at": "2026-10-02T11:12:51Z",
+        "published_at": "2026-10-08T12:50:29Z",
         "bullet_points": [
-          "AI effectively improves organizational speed and efficiency.",
-          "Competitive success now depends more on strategic vision than just technical capability.",
-          "Companies must decide how to best direct their AI efforts for long-term growth."
+          "Upscale AI released a new platform called Token Fabric.",
+          "The software allows data centers to connect AI chips from different manufacturers.",
+          "This tool helps solve compatibility issues between hardware suppliers."
         ],
         "feedback": null
       },
       {
-        "title": "A boardroom exit has two multibillion-dollar AI startups trading accusations",
-        "url": "https://www.businessinsider.com/ai-coding-rivals-factory-and-cognition-feud-over-top-hire-2026-9#article",
-        "source": "Business Insider",
-        "published_at": "2026-09-30T21:09:09Z",
+        "title": "Building a second-wave AI business",
+        "url": "https://seths.blog/2026/10/but-is-it-a-business/",
+        "source": "Seths.blog",
+        "published_at": "2026-10-06T16:57:17Z",
         "bullet_points": [
-          "Factory AI is accusing a former board member of unethical conduct.",
-          "The dispute involves private meetings held with rival company Cognition.",
-          "Legal and professional tensions are rising between these two AI startups."
+          "There are new opportunities for bootstrapped startups in the AI space.",
+          "Success in AI business requires creating genuine value for users.",
+          "The current AI market is moving into a second, more mature wave."
         ],
         "feedback": null
       },
       {
-        "title": "AI researchers put out videos saying superintelligence is \u2018exactly as dangerous as it sounds\u2019",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1002238/openai-google-anthropic-ai-researchers-safety-interviews",
+        "title": "Anthropic launches free AI security scans for open-source projects",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
         "source": "The Verge",
-        "published_at": "2026-09-29T17:35:03Z",
+        "published_at": "2026-10-08T21:54:31Z",
         "bullet_points": [
-          "Current and former AI researchers are speaking out about the dangers of superintelligence.",
-          "Experts expressed concerns about potential extinction-level risks.",
-          "The interviews highlight growing internal worries within leading AI firms."
+          "Anthropic introduced a free security tool called OSS Scanner.",
+          "It helps open-source projects find bugs and vulnerabilities.",
+          "Projects can choose to receive regular scans from powerful AI models."
         ],
         "feedback": null
       },
       {
-        "title": "The SaaSpocalypse that wasn\u2019t, with Atlassian CEO Mike Cannon-Brookes",
-        "url": "https://www.theverge.com/podcast/1000914/atlassian-ceo-mike-cannon-brookes-saaspocalypse-ai-enterprise-software-trello-jira",
-        "source": "The Verge",
-        "published_at": "2026-09-28T14:01:39Z",
+        "title": "Vesta raises $30M for AI agents that work on mortgage decisions",
+        "url": "https://thenextweb.com/news/vesta-30m-mortgage-ai-agents-eu",
+        "source": "The Next Web",
+        "published_at": "2026-10-09T18:59:29Z",
         "bullet_points": [
-          "Atlassian CEO Mike Cannon-Brookes discusses the future of software companies.",
-          "The conversation addresses the fear that AI would destroy the software-as-a-service model.",
-          "Atlassian continues to play a vital role in team management and organization."
+          "Vesta secured $30 million to expand its AI for mortgage processing.",
+          "The AI handles tasks like underwriting and mortgage approvals.",
+          "The software faces regulatory challenges in the European market."
         ],
         "feedback": null
       },
       {
-        "title": "Robotics startups are courting university researchers. Microagi just hired eight.",
-        "url": "https://www.businessinsider.com/microagi-hired-eight-academics-as-robotics-startups-chase-talent-2026-9#article",
+        "title": "AI was supposed to kill tech jobs. The data on job openings says otherwise.",
+        "url": "https://www.businessinsider.com/tech-job-openings-rise-ai-fuels-hardware-engineering-demand-2026-10#article",
         "source": "Business Insider",
-        "published_at": "2026-09-29T09:00:03Z",
+        "published_at": "2026-10-04T09:15:01Z",
         "bullet_points": [
-          "Robotics startups are actively recruiting top university talent.",
-          "Microagi recently hired a professor and seven members of his research team.",
-          "This trend highlights the intense competition for specialized robotics expertise."
+          "Tech job openings are increasing despite concerns about AI.",
+          "High demand for AI hardware is driving new hiring.",
+          "Software engineering jobs remain stable and resilient."
+        ],
+        "feedback": null
+      },
+      {
+        "title": "Beware the Rise of the \u2018Pentagon-Silicon Complex\u2019",
+        "url": "https://gizmodo.com/beware-the-rise-of-the-pentagon-silicon-complex-2000815450",
+        "source": "Gizmodo.com",
+        "published_at": "2026-10-05T13:15:46Z",
+        "bullet_points": [
+          "Private companies now own much of the technology used by the U.S. military.",
+          "This shift creates a new dynamic called the 'Pentagon-Silicon Complex'.",
+          "There are concerns about what happens if these companies disagree with the government."
+        ],
+        "feedback": null
+      },
+      {
+        "title": "Huawei and Qualcomm sign patent deal covering 5G, AI and networking",
+        "url": "https://thenextweb.com/news/huawei-qualcomm-patent-deal-5g-ai",
+        "source": "The Next Web",
+        "published_at": "2026-10-05T11:19:50Z",
+        "bullet_points": [
+          "Qualcomm and Huawei signed a long-term patent agreement.",
+          "The deal covers technologies like 5G and AI.",
+          "The partnership spans computing and network infrastructure."
+        ],
+        "feedback": null
+      },
+      {
+        "title": "Zapata Quantum joins IBM Quantum Network to build quantum applications",
+        "url": "https://thenextweb.com/news/zapata-quantum-ibm-quantum-network",
+        "source": "The Next Web",
+        "published_at": "2026-10-06T13:23:43Z",
+        "bullet_points": [
+          "Zapata Quantum joined the IBM Quantum Network.",
+          "The company will use IBM hardware to develop software applications.",
+          "Zapata focuses on helping businesses identify useful quantum computing problems."
         ],
         "feedback": null
       }
@@ -129,8 +129,8 @@
   },
   "student": {
     "persona": "Student",
-    "generated_at": "2026-10-03T14:36:30.303122+00:00",
-    "insight": "This week, the news highlights the financial and emotional challenges of planning for the future, from managing student debt and education costs to navigating complex career paths. While there are new government programs to help with loan defaults and tax credits for school, many students are still weighing the long-term value of their expensive education choices. Meanwhile, industry leaders and career pivoters provide strategies for success, reminding us that professional growth requires adaptability and perseverance in an uncertain economic climate.",
+    "generated_at": "2026-10-04T08:44:47.733785+00:00",
+    "insight": "This week highlights the significant financial and professional pressures students face as they navigate the transition into the workforce. From managing student loan debt and weighing the high costs of prestige education to adapting to a shifting job market, it is clear that strategic planning is more critical than ever. Whether choosing a career path or addressing loan requirements, today's students are balancing immediate financial realities with long-term professional aspirations.",
     "article_count": 10,
     "articles": [
       {
@@ -139,9 +139,9 @@
         "source": "Business Insider",
         "published_at": "2026-09-30T13:30:01Z",
         "bullet_points": [
-          "The government is moving some student loan accounts to the Treasury Department.",
-          "A new Default Resolution Hub is being launched for these accounts.",
-          "This is the first step in a new plan for managing student loan debt."
+          "The government is moving some student loan accounts to the Treasury.",
+          "A new Default Resolution Hub is being launched to help borrowers.",
+          "This change starts with an initial phase for managing defaulted loans."
         ],
         "feedback": null
       },
@@ -151,9 +151,9 @@
         "source": "Business Insider",
         "published_at": "2026-09-29T14:45:18Z",
         "bullet_points": [
-          "You have three more months to sign up for a special repayment benefit.",
-          "Enrolling in autopay can lower your interest rate by 1 percent.",
-          "The Education Department extended this deadline to help more borrowers."
+          "You now have three extra months to sign up for a special repayment benefit.",
+          "Enrolling in autopay can lower your loan interest rate by 1 percent.",
+          "The Education Department extended this deadline for student borrowers."
         ],
         "feedback": null
       },
@@ -163,9 +163,21 @@
         "source": "Business Insider",
         "published_at": "2026-09-29T16:25:50Z",
         "bullet_points": [
-          "The author chose a more expensive school for its location.",
-          "They turned down a scholarship at a cheaper university to attend.",
-          "They now reflect on whether the extra cost was worth the experience."
+          "A student chose an expensive school over a scholarship offer.",
+          "The decision was driven by a desire to live in New York City.",
+          "The writer is now reflecting on the financial cost of that choice."
+        ],
+        "feedback": null
+      },
+      {
+        "title": "Watch: Why students in France are protesting",
+        "url": "https://www.bbc.co.uk/news/videos/cr5ynddn318eo",
+        "source": "BBC News",
+        "published_at": "2026-10-02T15:02:15Z",
+        "bullet_points": [
+          "Students in France are holding demonstrations across the country.",
+          "The protests began in the capital city.",
+          "The movement has since spread to other parts of France."
         ],
         "feedback": null
       },
@@ -187,9 +199,9 @@
         "source": "Business Insider",
         "published_at": "2026-10-01T09:29:01Z",
         "bullet_points": [
-          "It is possible to switch career paths in the tech industry.",
-          "A Google engineer successfully moved from software engineering to cybersecurity.",
-          "He offers advice to others who want to change their career focus."
+          "A software engineer successfully switched to a career in cybersecurity.",
+          "The engineer now works at Google after making the change.",
+          "He offers advice for anyone considering a major career shift."
         ],
         "feedback": null
       },
@@ -199,9 +211,9 @@
         "source": "Business Insider",
         "published_at": "2026-10-01T09:38:01Z",
         "bullet_points": [
-          "Certain traits help employees stand out for promotions.",
-          "A Nestl\u00e9 leader identified three key qualities for career growth.",
-          "These qualities can help you move up the career ladder."
+          "The CEO of Nestl\u00e9 identified key traits for getting promoted.",
+          "Hard work and specific qualities can help you move up the career ladder.",
+          "These traits consistently help certain employees stand out to leadership."
         ],
         "feedback": null
       },
@@ -211,21 +223,9 @@
         "source": "Business Insider",
         "published_at": "2026-09-27T09:33:01Z",
         "bullet_points": [
-          "Successful career habits remain consistent over time.",
-          "A billionaire leader explains his strategy for professional success.",
-          "Many older professionals are choosing not to retire yet."
-        ],
-        "feedback": null
-      },
-      {
-        "title": "A former BCG partner says leaving consulting taught him how to build",
-        "url": "https://www.businessinsider.com/bcg-partner-to-juul-skan-tech-consulting-transition-2026-9#article",
-        "source": "Business Insider",
-        "published_at": "2026-09-27T09:31:01Z",
-        "bullet_points": [
-          "Leaving a consulting firm can provide new career opportunities.",
-          "Building a career after consulting requires a different mindset.",
-          "A former partner shares lessons learned from making the switch."
+          "A billionaire business leader shares his advice for career success.",
+          "He believes the core skills for success remain the same today.",
+          "Older workers are continuing to stay in the workforce longer."
         ],
         "feedback": null
       },
@@ -235,21 +235,21 @@
         "source": "Business Insider",
         "published_at": "2026-09-28T09:56:46Z",
         "bullet_points": [
-          "Working in the U.S. on an H-1B visa has unique challenges.",
-          "It can be difficult to plan a long-term life while on this visa.",
-          "Many workers face hidden sacrifices to maintain their careers."
+          "H-1B visas allow foreign workers to build careers in the U.S.",
+          "The visa process can create uncertainty for those living abroad.",
+          "Many workers face personal sacrifices while pursuing their careers in America."
         ],
         "feedback": null
       },
       {
-        "title": "Young people in China are fangirling over a professor who gets their anxiety",
-        "url": "https://www.bbc.co.uk/news/articles/cq70dgdndr46o",
-        "source": "BBC News",
-        "published_at": "2026-09-26T22:02:18Z",
+        "title": "A former BCG partner says leaving consulting taught him how to build",
+        "url": "https://www.businessinsider.com/bcg-partner-to-juul-skan-tech-consulting-transition-2026-9#article",
+        "source": "Business Insider",
+        "published_at": "2026-09-27T09:31:01Z",
         "bullet_points": [
-          "Young people in China are experiencing high levels of anxiety.",
-          "A specific professor has become popular for addressing these feelings.",
-          "Fast economic growth has created new pressures for today's students."
+          "A former consulting partner shared his experience transitioning to a new company.",
+          "Leaving the consulting field helped him learn how to build projects.",
+          "He provides advice on how to navigate a career after working in consulting."
         ],
         "feedback": null
       }
@@ -257,20 +257,20 @@
   },
   "finance_enthusiast": {
     "persona": "Finance Enthusiast",
-    "generated_at": "2026-10-03T14:37:09.828871+00:00",
-    "insight": "The economy shows impressive resilience with steady growth and strong consumer spending, despite rising bond yields and geopolitical instability. While macroeconomic pressures and inflationary concerns persist, the tech and AI sectors continue to command massive valuations and capital investment. For the individual investor, this environment highlights the importance of maintaining a disciplined, long-term strategy rather than reacting to emotional market headlines.",
+    "generated_at": "2026-10-04T08:45:26.422401+00:00",
+    "insight": "The current market landscape is defined by a tension between massive AI-driven corporate valuations and significant macroeconomic uncertainty. While tech giants like Nvidia and OpenAI continue to push astronomical capital figures and productivity gains, rising bond yields and geopolitical instability are keeping investors on edge. This environment highlights the importance of staying focused on long-term strategy rather than reacting to volatility or headline-driven fear.",
     "article_count": 10,
     "articles": [
       {
-        "title": "Defying higher bond yields: Consumers keep spending and the economy keeps booming",
-        "url": "https://finance.yahoo.com/economy/article/defying-higher-bond-yields-consumers-keep-spending-and-the-economy-keeps-booming-114059027.html",
+        "title": "Nvidia unveils record $150 billion stock buyback plan",
+        "url": "https://finance.yahoo.com/technology/article/nvidia-announces-jaw-dropping-150-billion-stock-buyback-largest-single-authorization-in-history-121342628.html",
         "source": "Yahoo Entertainment",
-        "published_at": "2026-09-26T11:40:59Z",
+        "published_at": "2026-09-28T12:13:42Z",
         "bullet_points": [
-          "The economy continues to grow despite high energy prices and tariffs.",
-          "The 10-year Treasury bond yield reached 5.2%.",
-          "Higher yields can make borrowing money, like mortgages, more expensive.",
-          "Strong consumer spending is helping the economy stay on track."
+          "Nvidia announced a $150 billion stock buyback plan.",
+          "This is the largest share repurchase program in history.",
+          "The company believes its current stock price is attractive.",
+          "The move is intended to return value to shareholders."
         ],
         "feedback": null
       },
@@ -281,9 +281,8 @@
         "published_at": "2026-09-30T12:44:22Z",
         "bullet_points": [
           "The U.S. economy grew by 2.2% between April and June.",
-          "This growth was driven by consumer spending and business investment.",
-          "The final growth figure was higher than initial estimates.",
-          "GDP growth slowed down slightly from the previous 2.5% pace."
+          "This growth was driven by strong consumer spending and business investment.",
+          "The new figure is higher than the initial estimate for the quarter."
         ],
         "feedback": null
       },
@@ -293,36 +292,9 @@
         "source": "Yahoo Entertainment",
         "published_at": "2026-10-02T10:00:00Z",
         "bullet_points": [
-          "The conflict in Iran is contributing to higher oil prices.",
-          "Treasury bond yields have reached levels not seen since 2002.",
-          "Investors are reacting to geopolitical uncertainty.",
-          "These economic pressures are fueling concerns about inflation."
-        ],
-        "feedback": null
-      },
-      {
-        "title": "Nvidia unveils record $150 billion stock buyback plan",
-        "url": "https://finance.yahoo.com/technology/article/nvidia-announces-jaw-dropping-150-billion-stock-buyback-largest-single-authorization-in-history-121342628.html",
-        "source": "Yahoo Entertainment",
-        "published_at": "2026-09-28T12:13:42Z",
-        "bullet_points": [
-          "Nvidia announced a record $150 billion stock buyback plan.",
-          "This is the largest share repurchase program in history.",
-          "CEO Jensen Huang believes the company's valuation is very attractive.",
-          "The buyback reflects confidence in the company's AI-focused future."
-        ],
-        "feedback": null
-      },
-      {
-        "title": "Avoid meme stocks and don't over-leverage: Here are the top tips from a 6-figure retail trader",
-        "url": "https://www.businessinsider.com/day-trading-tips-investors-meme-stocks-leverage-gamestop-2026-9#article",
-        "source": "Business Insider",
-        "published_at": "2026-09-27T09:45:01Z",
-        "bullet_points": [
-          "Avoid trading volatile meme stocks.",
-          "Do not use too much borrowed money, or leverage, for trades.",
-          "Long-term experience in the market is a key asset.",
-          "Successful trading requires patience and disciplined risk management."
+          "Rising tensions in Iran are affecting the U.S. economy.",
+          "Oil prices are rising due to the conflict.",
+          "U.S. Treasury bond yields have reached their highest levels since 2002."
         ],
         "feedback": null
       },
@@ -332,10 +304,10 @@
         "source": "The Next Web",
         "published_at": "2026-10-01T11:23:21Z",
         "bullet_points": [
-          "OpenAI is trying to raise $30 billion from investors.",
+          "OpenAI is trying to raise $30 billion in new funding.",
           "The company is seeking a total valuation of $1.4 trillion.",
-          "OpenAI's annual revenue is currently reaching $70 billion.",
-          "The funds would provide new capital before any potential public stock listing."
+          "The business is generating nearly $70 billion in revenue.",
+          "This funding effort comes as the company delays its stock market debut."
         ],
         "feedback": null
       },
@@ -345,10 +317,21 @@
         "source": "Yahoo Entertainment",
         "published_at": "2026-09-30T16:55:30Z",
         "bullet_points": [
-          "The Senate voted against a bill that would restrict stock trading by lawmakers.",
-          "The bill failed because it did not receive enough support.",
-          "Critics argued that the current version of the bill was not effective enough.",
-          "Trading regulations for members of Congress remain unchanged for now."
+          "The U.S. Senate blocked a bill to restrict stock trading by lawmakers.",
+          "The bill failed because it did not receive enough votes to advance.",
+          "Some opponents argued that the proposed legislation was not sufficient."
+        ],
+        "feedback": null
+      },
+      {
+        "title": "Avoid meme stocks and don't over-leverage: Here are the top tips from a 6-figure retail trader",
+        "url": "https://www.businessinsider.com/day-trading-tips-investors-meme-stocks-leasure-gamestop-2026-9#article",
+        "source": "Business Insider",
+        "published_at": "2026-09-27T09:45:01Z",
+        "bullet_points": [
+          "An experienced trader advises against buying meme stocks.",
+          "Investors are warned not to use too much leverage.",
+          "Spending a long time in the market is a key asset for success."
         ],
         "feedback": null
       },
@@ -358,23 +341,9 @@
         "source": "The Next Web",
         "published_at": "2026-09-28T13:22:00Z",
         "bullet_points": [
-          "Nu Holdings is in early talks to purchase the digital bank Monzo.",
-          "The deal could value Monzo between \u00a38 billion and \u00a310 billion.",
-          "Nu Holdings owns the popular digital bank Nubank.",
-          "Discussions regarding the potential acquisition are still in the early stages."
-        ],
-        "feedback": null
-      },
-      {
-        "title": "How financial advisors keep doomer clients from blowing up their portfolios",
-        "url": "https://www.businessinsider.com/how-financial-advisors-keep-doomers-from-blowing-up-their-portfolios-2026-9#article",
-        "source": "Business Insider",
-        "published_at": "2026-09-27T09:00:03Z",
-        "bullet_points": [
-          "Many investors currently feel pessimistic about the future.",
-          "Financial advisors discourage making emotional, panic-based investment decisions.",
-          "Do not manage your portfolio as if a global collapse is imminent.",
-          "Staying disciplined is important even when news headlines are scary."
+          "Nu Holdings is in early talks to purchase Monzo.",
+          "The potential deal is valued between \u00a38 billion and \u00a310 billion.",
+          "Monzo is a British digital bank."
         ],
         "feedback": null
       },
@@ -384,10 +353,33 @@
         "source": "Marginalrevolution.com",
         "published_at": "2026-09-29T04:50:01Z",
         "bullet_points": [
-          "AI is being studied for its impact on software engineering productivity.",
-          "Researchers use financial market data to track these economic changes.",
-          "The study provides a real-time way to measure how AI influences the broader economy.",
-          "Improved software productivity is seen as a key driver of AI's economic impact."
+          "AI is changing the economy by increasing productivity in software engineering.",
+          "Researchers used financial market data to track these impacts in real time.",
+          "The study looks at how AI integration affects broader economic trends."
+        ],
+        "feedback": null
+      },
+      {
+        "title": "Oura pulls $15bn stock market listing days after announcement",
+        "url": "https://www.bbc.co.uk/news/articles/cjwyz5v190qwo",
+        "source": "BBC News",
+        "published_at": "2026-09-29T17:17:07Z",
+        "bullet_points": [
+          "Oura has cancelled its planned stock market listing.",
+          "The company was previously valued at $15 billion.",
+          "The listing was expected to take place in the United States."
+        ],
+        "feedback": null
+      },
+      {
+        "title": "How financial advisors keep doomers from blowing up their portfolios",
+        "url": "https://www.businessinsider.com/how-financial-advisors-keep-doomers-from-blowing-up-their-portfolios-2026-9#article",
+        "source": "Business Insider",
+        "published_at": "2026-09-27T09:00:03Z",
+        "bullet_points": [
+          "People often worry excessively about the future of the economy.",
+          "Financial advisors help clients stay focused on long-term goals.",
+          "Investing based on fear of a collapse can damage your portfolio."
         ],
         "feedback": null
       }
@@ -395,20 +387,55 @@
   },
   "sports_fan": {
     "persona": "Sports Fan",
-    "generated_at": "2026-10-03T14:37:44.940454+00:00",
-    "insight": "This week's headlines highlight the growing tension between the traditional spirit of sports and the complex systems of money and governance surrounding them. From legal battles over financial regulations in professional football to debates over athlete compensation and coaching barriers, the integrity and structure of our favorite games are under intense scrutiny. Ultimately, fans are witnessing a shift where institutional politics and financial strategies are becoming as central to the conversation as the action on the field.",
+    "generated_at": "2026-10-09T15:52:16.771494+00:00",
+    "insight": "This week highlights how the landscape of global sports is rapidly shifting through leadership changes, ambitious Olympic expansion, and new streaming platforms. From the major retirement of a cricket icon to the entry of streaming giants like Disney Plus into major events, professional sports are evolving to meet modern viewer demands. These developments, paired with complex administrative challenges in football, show a world where both the rules and the reach of athletics are constantly being redefined.",
     "article_count": 10,
     "articles": [
       {
-        "title": "What have Man City been found guilty of doing?",
-        "url": "https://www.bbc.co.uk/sport/football/videos/cm1j46n74ke6o",
+        "title": "She made India fall in love with women's cricket - now her era as captain is over",
+        "url": "https://www.bbc.co.uk/news/articles/cm4g1pjrd5ewo",
         "source": "BBC News",
-        "published_at": "2026-09-29T18:09:34Z",
+        "published_at": "2026-10-07T23:31:00Z",
         "bullet_points": [
-          "Manchester City broke Premier League financial rules.",
-          "The violations happened between 2009 and 2018.",
-          "The club was found guilty of all charges.",
-          "Experts are now analyzing what this means for the team's future."
+          "The Indian women's cricket captain has resigned from her role.",
+          "She led the team to a historic World Cup victory in 2025.",
+          "She is stepping down as captain for all three cricket formats."
+        ],
+        "feedback": null
+      },
+      {
+        "title": "Arteta signs new contract with champions Arsenal",
+        "url": "https://www.bbc.co.uk/sport/football/articles/crz65j5p8l57o",
+        "source": "BBC News",
+        "published_at": "2026-10-07T11:00:53Z",
+        "bullet_points": [
+          "Mikel Arteta signed a new contract with Arsenal.",
+          "The deal keeps him with the club until 2030.",
+          "He believes the team will continue to see more success."
+        ],
+        "feedback": null
+      },
+      {
+        "title": "Qatar and India among seven countries bidding for 2036 Olympics, IOC says",
+        "url": "https://www.aljazeera.com/sports/2026/10/6/qatar-and-india-among-seven-countries-bidding-for-2036-olympics-ioc-says",
+        "source": "Al Jazeera English",
+        "published_at": "2026-10-06T12:19:50Z",
+        "bullet_points": [
+          "Seven countries want to host the 2036 Olympics.",
+          "The interested nations include India, Qatar, South Africa, and South Korea.",
+          "Turkiye, Germany, and Hungary have also submitted bids."
+        ],
+        "feedback": null
+      },
+      {
+        "title": "Kane scores twice but who else was a 'real threat'? England player ratings",
+        "url": "https://www.bbc.co.uk/sport/football/articles/cx7vp3lqv985o",
+        "source": "BBC News",
+        "published_at": "2026-10-06T20:42:24Z",
+        "bullet_points": [
+          "England defeated the Czech Republic 3-0.",
+          "Harry Kane scored two goals in the match.",
+          "The article analyzes individual player performances."
         ],
         "feedback": null
       },
@@ -418,114 +445,68 @@
         "source": "BBC News",
         "published_at": "2026-10-02T06:37:49Z",
         "bullet_points": [
-          "German football has five league champions this year.",
-          "Only four of these teams can be promoted.",
-          "This creates a problem for the league structure.",
-          "The system cannot accommodate every winning team."
+          "German football has a problem with league promotion.",
+          "Five league champions are competing for only four spots.",
+          "The current system prevents all winners from moving up."
         ],
         "feedback": null
       },
       {
-        "title": "A 31-year wait for success - but can Everton fans still celebrate?",
-        "url": "https://www.bbc.co.uk/sport/football/articles/c0m3lpj4gm4o",
+        "title": "Disney Plus will stream Super Bowl LXI",
+        "url": "https://www.theverge.com/streaming/1006911/disney-plus-super-bowl-lxi-streaming",
+        "source": "The Verge",
+        "published_at": "2026-10-07T16:29:55Z",
+        "bullet_points": [
+          "Disney Plus will stream Super Bowl LXI.",
+          "The game takes place on February 14, 2027.",
+          "US subscribers can watch the game directly on the service."
+        ],
+        "feedback": null
+      },
+      {
+        "title": "Ex-Spurs player Vega set to run for Fifa president",
+        "url": "https://www.bbc.co.uk/sport/football/articles/c607397pjv37o",
         "source": "BBC News",
-        "published_at": "2026-09-28T07:56:56Z",
+        "published_at": "2026-10-07T15:16:40Z",
         "bullet_points": [
-          "Everton has not won a trophy in 31 years.",
-          "Fans are questioning if there is still joy in supporting the club.",
-          "The article explores the struggle of long-term supporters.",
-          "It examines whether success is necessary for a meaningful fan experience."
+          "Former Tottenham player Ramon Vega is running for FIFA president.",
+          "The election is scheduled to take place next year."
         ],
         "feedback": null
       },
       {
-        "title": "Infantino should have no place in future of football - Pinto",
-        "url": "https://www.bbc.co.uk/sport/football/articles/cm0rekrpxnl1o",
+        "title": "At the 1904 Olympics, a marathoner took rat poison to win gold",
+        "url": "https://www.popsci.com/health/olympic-runner-thomas-hicks/",
+        "source": "Popular Science",
+        "published_at": "2026-10-06T13:03:00Z",
+        "bullet_points": [
+          "A marathon runner took rat poison during the 1904 Olympics.",
+          "The substance was used to create a temporary energy boost.",
+          "The runner used the drug to help him win the gold medal."
+        ],
+        "feedback": null
+      },
+      {
+        "title": "Gabriel in Man Utd team photo but no hint of reconciliation",
+        "url": "https://www.bbc.co.uk/sport/football/articles/cmde8n8j0dn4o",
         "source": "BBC News",
-        "published_at": "2026-09-30T19:47:40Z",
+        "published_at": "2026-10-05T19:13:15Z",
         "bullet_points": [
-          "A hacker released documents that triggered the Man City investigation.",
-          "The hacker claims Gianni Infantino should leave football.",
-          "Infantino is the head of FIFA.",
-          "The comments have sparked further debate about leadership in the sport."
+          "JJ Gabriel appeared in a Manchester United team photo.",
+          "There is still a serious conflict between the player and the club.",
+          "No signs of healing the relationship are currently visible."
         ],
         "feedback": null
       },
       {
-        "title": "The Senate passes the Protect College Sports Act, but the bill's future is unclear",
-        "url": "https://www.npr.org/2026/09/28/nx-s1-5977851/protect-college-sports-act-senate-bill-vote",
-        "source": "NPR",
-        "published_at": "2026-09-29T02:16:19Z",
-        "bullet_points": [
-          "The Senate passed the Protect College Sports Act.",
-          "Supporters want to bring order to college athlete rules.",
-          "The bill addresses issues like pay and transfers.",
-          "It is still uncertain if the bill will become law."
-        ],
-        "feedback": null
-      },
-      {
-        "title": "Burnham 'really concerned' if Man City owners sell up after rule breaches",
-        "url": "https://www.bbc.co.uk/news/articles/crkgwvv8xvw0o",
+        "title": "'Hitchy is always with us' - the keeper who died after one-punch attack",
+        "url": "https://www.bbc.co.uk/sport/football/articles/cmn8en9wxv1no",
         "source": "BBC News",
-        "published_at": "2026-09-30T16:01:16Z",
+        "published_at": "2026-10-02T07:59:22Z",
         "bullet_points": [
-          "The Prime Minister is worried about Manchester City's future ownership.",
-          "He fears the owners might leave due to the rule breaches.",
-          "He compared the situation to his own club, Everton.",
-          "The uncertainty over ownership creates concern for the future."
-        ],
-        "feedback": null
-      },
-      {
-        "title": "Money, family and sexism - why the number of women coaches is dropping",
-        "url": "https://www.bbc.co.uk/sport/football/articles/cwz0z2en8xxno",
-        "source": "BBC News",
-        "published_at": "2026-10-01T06:43:23Z",
-        "bullet_points": [
-          "Fewer women are working as sports coaches in the UK.",
-          "Women's sports are getting more attention on the field.",
-          "Money and sexism remain major obstacles for female coaches.",
-          "Balancing family life is also a significant challenge."
-        ],
-        "feedback": null
-      },
-      {
-        "title": "'It's not gambling for those who are educated': Meet the sports bettors trying to turn their wagers into long-term wealth",
-        "url": "https://www.businessinsider.com/sports-betting-investing-strategy-arbitrage-build-wealth-gambling-2026-9#article",
-        "source": "Business Insider",
-        "published_at": "2026-09-27T09:35:01Z",
-        "bullet_points": [
-          "Some people use sports betting to build long-term wealth.",
-          "These bettors treat wagers like an investment strategy.",
-          "They believe education makes the difference between gambling and investing.",
-          "The practice involves using data rather than just luck."
-        ],
-        "feedback": null
-      },
-      {
-        "title": "As Congress debates college sports, athletes-turned-senators have a seat at the table",
-        "url": "https://www.npr.org/2026/09/27/nx-s1-5978973/protect-college-sports-act-senators-athletes",
-        "source": "NPR",
-        "published_at": "2026-09-27T12:06:24Z",
-        "bullet_points": [
-          "Senators who played college sports are influencing the new act.",
-          "These senators come from both political parties.",
-          "They are using their personal experiences to shape the debate.",
-          "Their input is helping push the bill toward passing."
-        ],
-        "feedback": null
-      },
-      {
-        "title": "Why prediction markets might take a bite out of New York's tax revenue",
-        "url": "https://www.businessinsider.com/new-york-gambling-tax-revenue-faces-loss-prediction-market-growth-2026-10#article",
-        "source": "Business Insider",
-        "published_at": "2026-10-02T10:00:01Z",
-        "bullet_points": [
-          "New York makes over a billion dollars in taxes from sports betting.",
-          "New prediction markets are becoming popular.",
-          "These markets might reduce the state's tax income.",
-          "Officials are watching how this shift impacts revenue."
+          "James Hitchcock was a goalkeeper who died after an attack.",
+          "He passed away nearly two years ago after being punched.",
+          "His former team, Barton Town, continues to honor his memory."
         ],
         "feedback": null
       }
